@@ -14,3 +14,10 @@
 
 ##These don't really do anything / aren't written well / etc
 * Yes, I know. Just poking around a bit, OK?
+
+##How do I make a new project? 
+* OS X
+	* Open the project generator
+	* Generate a new project with ofxAsio as one addon
+	* Add the websocketpp folder to your 'header search paths' (e.g. if I'm making a project in this folder, I add '../libs' and '../libs/websocketpp')
+	* 

@@ -1,0 +1,1562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01B8D2AE1C99AA3A007A9733 /* libturbojpeg.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B8D2AD1C99AA3A007A9733 /* libturbojpeg.dylib */; };
+		01B8D2AF1C99AA3B007A9733 /* libturbojpeg.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01B8D2AD1C99AA3A007A9733 /* libturbojpeg.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		34A1CD0B670B0A4266464779 /* ofxTurboJpeg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC7594CA5E21F32F237CA87E /* ofxTurboJpeg.cpp */; };
+		3E5B1D1712E951B75D49D57E /* Socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9DA35D8D6B0724D17B91D /* Socket.cpp */; };
+		DF2C2E8EF66E394D0F1A2174 /* DataGram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 120F006E6911C9F18AA50323 /* DataGram.cpp */; };
+		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
+		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
+		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
+		ECD90E10F2A7E5A26DA1AFFC /* EndPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4656EAFE338D106AD171DCC2 /* EndPoint.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4328147138ABC890047C5CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B27C1510CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+		E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B27C1410CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4C2427710CC5ABF004149E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				01B8D2AF1C99AA3B007A9733 /* libturbojpeg.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		015AAC90A05C28145720DF69 /* read_at.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = read_at.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/read_at.hpp; sourceTree = SOURCE_ROOT; };
+		01B4E50A1C98C3510059F505 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		01B8D2AD1C99AA3A007A9733 /* libturbojpeg.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libturbojpeg.dylib; path = "../../../addons/ofxTurboJpeg/libs/turbo-jpeg/lib/osx/libturbojpeg.dylib"; sourceTree = "<group>"; };
+		0226C2077EFF1C9027BBD89B /* signal_init.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = signal_init.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/signal_init.hpp; sourceTree = SOURCE_ROOT; };
+		02FDE4EE5E4031A3DC5040D8 /* openssl_init.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = openssl_init.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl/detail/openssl_init.hpp; sourceTree = SOURCE_ROOT; };
+		038BDC6DF37D7F52955E35EC /* std_event.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = std_event.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/std_event.hpp; sourceTree = SOURCE_ROOT; };
+		03A85CB4C82ABF256AED3545 /* signal_set.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = signal_set.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/signal_set.hpp; sourceTree = SOURCE_ROOT; };
+		04448B9B3F63E58CE8754690 /* bind_executor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = bind_executor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/bind_executor.hpp; sourceTree = SOURCE_ROOT; };
+		04A1019B84D2BD24E6554631 /* overlapped_ptr.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = overlapped_ptr.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/windows/overlapped_ptr.hpp; sourceTree = SOURCE_ROOT; };
+		05EFC55F02525E65A00C8FC5 /* error.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = error.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl/error.hpp; sourceTree = SOURCE_ROOT; };
+		0605DDDDEBABEC0B940D85D3 /* resolver_base.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = resolver_base.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/resolver_base.hpp; sourceTree = SOURCE_ROOT; };
+		0656785FA12E12192CF98829 /* version.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = version.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/version.hpp; sourceTree = SOURCE_ROOT; };
+		066F372C2C39AFE52FD1C6B3 /* std_global.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = std_global.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/std_global.hpp; sourceTree = SOURCE_ROOT; };
+		06D73D87DDDACBE840CEE57A /* buffered_write_stream.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = buffered_write_stream.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/buffered_write_stream.hpp; sourceTree = SOURCE_ROOT; };
+		06EF65928EF73F0F1247DC67 /* limits.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = limits.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/limits.hpp; sourceTree = SOURCE_ROOT; };
+		078BDF2690C17AF0A9C6A26F /* tcp.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = tcp.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/tcp.hpp; sourceTree = SOURCE_ROOT; };
+		08C38444CEF9D3F77E000A0A /* win_iocp_io_context.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_iocp_io_context.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_iocp_io_context.hpp; sourceTree = SOURCE_ROOT; };
+		09807EAC39F23495B54FCDD0 /* reactor_op_queue.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = reactor_op_queue.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/reactor_op_queue.hpp; sourceTree = SOURCE_ROOT; };
+		09BCF932422C0CD9BD1A6AC9 /* host_name.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = host_name.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/host_name.hpp; sourceTree = SOURCE_ROOT; };
+		0A83C3D64629B0306BB89A37 /* system_timer.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = system_timer.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/system_timer.hpp; sourceTree = SOURCE_ROOT; };
+		0B3FECA72CB53915CF8ABE8C /* variadic_templates.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = variadic_templates.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/variadic_templates.hpp; sourceTree = SOURCE_ROOT; };
+		0C3D86119BEE0A1734AF3A32 /* socket_option.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = socket_option.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/socket_option.hpp; sourceTree = SOURCE_ROOT; };
+		0CA222C2E3FD056FC05805CC /* memory.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = memory.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/memory.hpp; sourceTree = SOURCE_ROOT; };
+		0CB0F86886356A2FA142EAF8 /* select_reactor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = select_reactor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/impl/select_reactor.hpp; sourceTree = SOURCE_ROOT; };
+		0CB119E1BEDF7FFB88065E2A /* winrt_async_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = winrt_async_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/winrt_async_op.hpp; sourceTree = SOURCE_ROOT; };
+		0DCA227A6FCBE2C6FFA8FD50 /* winrt_utils.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = winrt_utils.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/winrt_utils.hpp; sourceTree = SOURCE_ROOT; };
+		0E5244CAFBD6FBB15B3887F3 /* posix_global.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = posix_global.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/posix_global.hpp; sourceTree = SOURCE_ROOT; };
+		0E7D77DA9E6B98D926F21085 /* io_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = io_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/io_service.hpp; sourceTree = SOURCE_ROOT; };
+		0EFB41D42BB491A72A1BD298 /* icmp.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = icmp.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/icmp.hpp; sourceTree = SOURCE_ROOT; };
+		0F2022218625B82DFC28C933 /* select_interrupter.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = select_interrupter.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/select_interrupter.hpp; sourceTree = SOURCE_ROOT; };
+		0F251833AD88CF614859D2B7 /* chrono.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = chrono.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/chrono.hpp; sourceTree = SOURCE_ROOT; };
+		0F546A09B6923C1AFDE770D7 /* network_v6.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = network_v6.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/network_v6.hpp; sourceTree = SOURCE_ROOT; };
+		0F6E180B591783F6DACFE0E8 /* wait_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = wait_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/wait_op.hpp; sourceTree = SOURCE_ROOT; };
+		0F986797D22D01BA049F6673 /* win_iocp_io_context.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_iocp_io_context.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/impl/win_iocp_io_context.hpp; sourceTree = SOURCE_ROOT; };
+		1100BF30B97058C17432C027 /* wince_thread.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = wince_thread.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/wince_thread.hpp; sourceTree = SOURCE_ROOT; };
+		11B7BC7D8C627F90CA6DB726 /* buffered_stream_fwd.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = buffered_stream_fwd.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/buffered_stream_fwd.hpp; sourceTree = SOURCE_ROOT; };
+		11C56B23747DFBB1291277BA /* stream_protocol.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = stream_protocol.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/generic/stream_protocol.hpp; sourceTree = SOURCE_ROOT; };
+		120F006E6911C9F18AA50323 /* DataGram.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = DataGram.cpp; path = ../../../addons/ofxAsio/src/ofxAsio/UDP/DataGram.cpp; sourceTree = SOURCE_ROOT; };
+		1236762772F76B077A02A7A3 /* deadline_timer_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = deadline_timer_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/deadline_timer_service.hpp; sourceTree = SOURCE_ROOT; };
+		129D0E91D668F9F77E49ADF1 /* defer.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = defer.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/defer.hpp; sourceTree = SOURCE_ROOT; };
+		13194E93ABF13663E66D7DD6 /* read_at.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = read_at.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/impl/read_at.hpp; sourceTree = SOURCE_ROOT; };
+		13E55B9F08AA523B8999A9B0 /* Socket.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Socket.h; path = ../../../addons/ofxAsio/src/ofxAsio/UDP/Socket.h; sourceTree = SOURCE_ROOT; };
+		1419D301C5FFFA1109626EF9 /* handler_type.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = handler_type.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/handler_type.hpp; sourceTree = SOURCE_ROOT; };
+		15E6052C489EB73E957E899B /* std_static_mutex.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = std_static_mutex.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/std_static_mutex.hpp; sourceTree = SOURCE_ROOT; };
+		1795CD2DE478BAFF7A275661 /* execution_context.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = execution_context.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/execution_context.hpp; sourceTree = SOURCE_ROOT; };
+		17F446FF38F0891A7A24FEB4 /* cstdint.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = cstdint.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/cstdint.hpp; sourceTree = SOURCE_ROOT; };
+		186F4EEFF342AA2A6D593847 /* deadline_timer.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = deadline_timer.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/deadline_timer.hpp; sourceTree = SOURCE_ROOT; };
+		19B2A0F055BEDBCF62A77B82 /* basic_endpoint.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_endpoint.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/generic/basic_endpoint.hpp; sourceTree = SOURCE_ROOT; };
+		1A43F70DE23B8946AF86B296 /* gcc_x86_fenced_block.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gcc_x86_fenced_block.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/gcc_x86_fenced_block.hpp; sourceTree = SOURCE_ROOT; };
+		1ABE92943D928B14E9A24194 /* use_future.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = use_future.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/use_future.hpp; sourceTree = SOURCE_ROOT; };
+		1AE46CBF7C5B12A6AFBADB9F /* win_iocp_socket_accept_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_iocp_socket_accept_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_iocp_socket_accept_op.hpp; sourceTree = SOURCE_ROOT; };
+		1AF6863FD94071ED2FF54022 /* reactor_fwd.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = reactor_fwd.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/reactor_fwd.hpp; sourceTree = SOURCE_ROOT; };
+		1B135FE87C5DF447E23E80A7 /* completion_handler.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = completion_handler.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/completion_handler.hpp; sourceTree = SOURCE_ROOT; };
+		1E0A6C32A811730723B8F17A /* posix_thread.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = posix_thread.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/posix_thread.hpp; sourceTree = SOURCE_ROOT; };
+		1EBF96FCD761967F4235D3B4 /* read.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = read.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/read.hpp; sourceTree = SOURCE_ROOT; };
+		1F60D3E64E41DEC74F8B4AD0 /* executor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = executor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/impl/executor.hpp; sourceTree = SOURCE_ROOT; };
+		1F6949752BBD55F30089BD46 /* basic_descriptor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_descriptor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/posix/basic_descriptor.hpp; sourceTree = SOURCE_ROOT; };
+		1FCCB2B83060A0F0DD7D3327 /* network_v4.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = network_v4.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/network_v4.hpp; sourceTree = SOURCE_ROOT; };
+		1FFC9EFBD0EA48EBA05348B7 /* select_reactor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = select_reactor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/select_reactor.hpp; sourceTree = SOURCE_ROOT; };
+		207D4A0A8C85A1B15E2E0DF1 /* raw_socket_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = raw_socket_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/raw_socket_service.hpp; sourceTree = SOURCE_ROOT; };
+		20AD6BB462DA8A1C28F22EE4 /* winapp_thread.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = winapp_thread.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/winapp_thread.hpp; sourceTree = SOURCE_ROOT; };
+		21B36F30B88235D494623CF8 /* recycling_allocator.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = recycling_allocator.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/recycling_allocator.hpp; sourceTree = SOURCE_ROOT; };
+		22D6613761B30B5116CC2E1A /* streambuf.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = streambuf.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/streambuf.hpp; sourceTree = SOURCE_ROOT; };
+		244CBDD4A6226D6245D8547C /* basic_socket_streambuf.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_socket_streambuf.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/basic_socket_streambuf.hpp; sourceTree = SOURCE_ROOT; };
+		253D79708EAB8F568E1F38E1 /* ofxAsio.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxAsio.h; path = ../../../addons/ofxAsio/src/ofxAsio.h; sourceTree = SOURCE_ROOT; };
+		254ED23704E269E99583C74D /* functional.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = functional.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/functional.hpp; sourceTree = SOURCE_ROOT; };
+		271B318A71CD365CCBDB4E4B /* stream_handle_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = stream_handle_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/windows/stream_handle_service.hpp; sourceTree = SOURCE_ROOT; };
+		277C6A0148F6B1CB42E1BB35 /* strand_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = strand_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/strand_service.hpp; sourceTree = SOURCE_ROOT; };
+		27C817FD256C997B3A559BF3 /* win_iocp_socket_service_base.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_iocp_socket_service_base.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_iocp_socket_service_base.hpp; sourceTree = SOURCE_ROOT; };
+		280384539D54FE6A837FB844 /* macos_fenced_block.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = macos_fenced_block.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/macos_fenced_block.hpp; sourceTree = SOURCE_ROOT; };
+		2860CE471DCF3E90F2454D3D /* op_queue.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = op_queue.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/op_queue.hpp; sourceTree = SOURCE_ROOT; };
+		28978AA7A1E1BDEE9CE97723 /* std_thread.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = std_thread.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/std_thread.hpp; sourceTree = SOURCE_ROOT; };
+		28BC8CDAF9525C338B5D5603 /* write.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = write.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/write.hpp; sourceTree = SOURCE_ROOT; };
+		28E9519BAB9C204547A41653 /* winrt_timer_scheduler.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = winrt_timer_scheduler.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/winrt_timer_scheduler.hpp; sourceTree = SOURCE_ROOT; };
+		2A53AC08906F1810286DCB77 /* network_v6.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = network_v6.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/impl/network_v6.hpp; sourceTree = SOURCE_ROOT; };
+		2AAD2B6EF157CEF02D073B3B /* basic_raw_socket.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_raw_socket.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/basic_raw_socket.hpp; sourceTree = SOURCE_ROOT; };
+		2ADFEC2CC093760ECA6EA289 /* win_fd_set_adapter.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_fd_set_adapter.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_fd_set_adapter.hpp; sourceTree = SOURCE_ROOT; };
+		2CEBB253E463B1E488F559E5 /* gcc_hppa_fenced_block.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gcc_hppa_fenced_block.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/gcc_hppa_fenced_block.hpp; sourceTree = SOURCE_ROOT; };
+		2D13D97A604D3643AE1AC879 /* resolve_endpoint_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = resolve_endpoint_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/resolve_endpoint_op.hpp; sourceTree = SOURCE_ROOT; };
+		2DD4151161396194B1679F8F /* udp.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = udp.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/udp.hpp; sourceTree = SOURCE_ROOT; };
+		2DE73A159CA1D5D09F613F34 /* system_executor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = system_executor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/impl/system_executor.hpp; sourceTree = SOURCE_ROOT; };
+		2E2721B88ED008C4BBD4CB89 /* datagram_socket_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = datagram_socket_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/datagram_socket_service.hpp; sourceTree = SOURCE_ROOT; };
+		2E2BB018C2AFB373C190F9A6 /* win_iocp_operation.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_iocp_operation.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_iocp_operation.hpp; sourceTree = SOURCE_ROOT; };
+		2E6F7C74BE5F9CC9FC10E099 /* bad_address_cast.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = bad_address_cast.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/bad_address_cast.hpp; sourceTree = SOURCE_ROOT; };
+		2EB40BDDFFB81E25BACF1514 /* basic_resolver_query.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_resolver_query.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/basic_resolver_query.hpp; sourceTree = SOURCE_ROOT; };
+		2EEDB892A869661A5A45F965 /* spawn.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = spawn.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/spawn.hpp; sourceTree = SOURCE_ROOT; };
+		2FBB871958A373D8C13B66E2 /* win_iocp_null_buffers_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_iocp_null_buffers_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_iocp_null_buffers_op.hpp; sourceTree = SOURCE_ROOT; };
+		32060CF40A8CF9C69BD03848 /* unicast.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = unicast.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/unicast.hpp; sourceTree = SOURCE_ROOT; };
+		32DD001B8BBD33C6F99930D9 /* address_v4_iterator.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = address_v4_iterator.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/address_v4_iterator.hpp; sourceTree = SOURCE_ROOT; };
+		330D174DE319735B686EACD7 /* basic_stream_socket.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_stream_socket.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/basic_stream_socket.hpp; sourceTree = SOURCE_ROOT; };
+		3403D5E6086298AFA294E8D0 /* resolver_query_base.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = resolver_query_base.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/resolver_query_base.hpp; sourceTree = SOURCE_ROOT; };
+		34435E8C3BEAB3D21BCE45AC /* win_event.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_event.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_event.hpp; sourceTree = SOURCE_ROOT; };
+		3499CEFD3E7E978ECFE64B24 /* strand_executor_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = strand_executor_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/impl/strand_executor_service.hpp; sourceTree = SOURCE_ROOT; };
+		34C1C2195FA74A9BF43A8A40 /* regex_fwd.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = regex_fwd.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/regex_fwd.hpp; sourceTree = SOURCE_ROOT; };
+		358A074E845644D9EFF818A3 /* timer_scheduler_fwd.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = timer_scheduler_fwd.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/timer_scheduler_fwd.hpp; sourceTree = SOURCE_ROOT; };
+		3638F15DF36EABF891586F47 /* old_win_sdk_compat.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = old_win_sdk_compat.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/old_win_sdk_compat.hpp; sourceTree = SOURCE_ROOT; };
+		36D4D15822F33E5D0695B99C /* win_iocp_socket_connect_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_iocp_socket_connect_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_iocp_socket_connect_op.hpp; sourceTree = SOURCE_ROOT; };
+		373B92213425D5E2A4F6DFAA /* rfc2818_verification.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = rfc2818_verification.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl/rfc2818_verification.hpp; sourceTree = SOURCE_ROOT; };
+		396F467D4A296A0D9EB0C659 /* endpoint.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = endpoint.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/generic/detail/endpoint.hpp; sourceTree = SOURCE_ROOT; };
+		3A46962FE133F68EA17DE124 /* verify_callback.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = verify_callback.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl/detail/verify_callback.hpp; sourceTree = SOURCE_ROOT; };
+		3A59FFEFB0D655B8ECA42E22 /* scheduler_operation.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = scheduler_operation.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/scheduler_operation.hpp; sourceTree = SOURCE_ROOT; };
+		3A78055C652B81D3E0827846 /* posix_fd_set_adapter.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = posix_fd_set_adapter.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/posix_fd_set_adapter.hpp; sourceTree = SOURCE_ROOT; };
+		3AF8CA16131A88667DB9027A /* endpoint.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = endpoint.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/detail/endpoint.hpp; sourceTree = SOURCE_ROOT; };
+		3B5FCCD37112FD41D3593F39 /* win_iocp_handle_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_iocp_handle_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_iocp_handle_service.hpp; sourceTree = SOURCE_ROOT; };
+		3D3004E2EF15B0ACE1E64F27 /* is_read_buffered.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = is_read_buffered.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/is_read_buffered.hpp; sourceTree = SOURCE_ROOT; };
+		3F8EAF45B35D7E362A276D6C /* buffered_read_stream.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = buffered_read_stream.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/buffered_read_stream.hpp; sourceTree = SOURCE_ROOT; };
+		40A959C869AF2DB4BA29A469 /* type_traits.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = type_traits.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/type_traits.hpp; sourceTree = SOURCE_ROOT; };
+		411824B05B96233C326A8C02 /* win_object_handle_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_object_handle_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_object_handle_service.hpp; sourceTree = SOURCE_ROOT; };
+		4119A5AB3C3F7BF9F27D2960 /* dispatch.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dispatch.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/dispatch.hpp; sourceTree = SOURCE_ROOT; };
+		43AA1899BADF130CD40FE74C /* config.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = config.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/config.hpp; sourceTree = SOURCE_ROOT; };
+		43C8437A542DBFEF85BDEE9D /* epoll_reactor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = epoll_reactor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/impl/epoll_reactor.hpp; sourceTree = SOURCE_ROOT; };
+		43E179D576D6B7E0A4E9593D /* address.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = address.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/address.hpp; sourceTree = SOURCE_ROOT; };
+		448975FC64CF501E11788970 /* handler_work.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = handler_work.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/handler_work.hpp; sourceTree = SOURCE_ROOT; };
+		4587D11D9AE323653F0AE092 /* null_mutex.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = null_mutex.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/null_mutex.hpp; sourceTree = SOURCE_ROOT; };
+		4656EAFE338D106AD171DCC2 /* EndPoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = EndPoint.cpp; path = ../../../addons/ofxAsio/src/ofxAsio/UDP/EndPoint.cpp; sourceTree = SOURCE_ROOT; };
+		46C2C0B6AB5EACB36663C39E /* asio.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = asio.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio.hpp; sourceTree = SOURCE_ROOT; };
+		4711AF910997E62EC982E160 /* handler_invoke_hook.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = handler_invoke_hook.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/handler_invoke_hook.hpp; sourceTree = SOURCE_ROOT; };
+		4793A929FF869E5B1DA5C3BA /* basic_streambuf.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_streambuf.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/basic_streambuf.hpp; sourceTree = SOURCE_ROOT; };
+		4A13DF5529234F4C8E4BDB39 /* basic_serial_port.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_serial_port.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/basic_serial_port.hpp; sourceTree = SOURCE_ROOT; };
+		4B682F722E2628289326ABF7 /* use_future.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = use_future.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/impl/use_future.hpp; sourceTree = SOURCE_ROOT; };
+		4BA3FBFE83034078B38AAC05 /* steady_timer.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = steady_timer.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/steady_timer.hpp; sourceTree = SOURCE_ROOT; };
+		4C28C57C8972399F89B44E47 /* socket_select_interrupter.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = socket_select_interrupter.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/socket_select_interrupter.hpp; sourceTree = SOURCE_ROOT; };
+		4C9E2FC2A47070D935B3BFB2 /* throw_error.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = throw_error.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/throw_error.hpp; sourceTree = SOURCE_ROOT; };
+		4CF9DA35D8D6B0724D17B91D /* Socket.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Socket.cpp; path = ../../../addons/ofxAsio/src/ofxAsio/UDP/Socket.cpp; sourceTree = SOURCE_ROOT; };
+		4F014F27E939089B8D5DB5E9 /* serial_port_base.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = serial_port_base.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/impl/serial_port_base.hpp; sourceTree = SOURCE_ROOT; };
+		4F1D6EA84976A4901E2E07D2 /* array.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = array.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/array.hpp; sourceTree = SOURCE_ROOT; };
+		5133791924F48EECE345A826 /* reactor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = reactor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/reactor.hpp; sourceTree = SOURCE_ROOT; };
+		513DD7DEAEC4DA31F2979442 /* reactive_socket_connect_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = reactive_socket_connect_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/reactive_socket_connect_op.hpp; sourceTree = SOURCE_ROOT; };
+		516111AB46027F89E5EED6B3 /* buffer.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = buffer.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/buffer.hpp; sourceTree = SOURCE_ROOT; };
+		51F94C8BB641C5AC8CDFFB78 /* address_v6.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = address_v6.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/impl/address_v6.hpp; sourceTree = SOURCE_ROOT; };
+		53CC63265FF97DF4E9FDCEC9 /* stream_core.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = stream_core.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl/detail/stream_core.hpp; sourceTree = SOURCE_ROOT; };
+		540CED893A6638D25F2F96CB /* null_socket_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = null_socket_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/null_socket_service.hpp; sourceTree = SOURCE_ROOT; };
+		546F1E9B0A6204EB0C186595 /* io_context_strand.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = io_context_strand.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/io_context_strand.hpp; sourceTree = SOURCE_ROOT; };
+		546F7DCBE477E587DC04F9F4 /* std_mutex.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = std_mutex.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/std_mutex.hpp; sourceTree = SOURCE_ROOT; };
+		54DBEF9E8918B4DDC264101A /* descriptor_read_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = descriptor_read_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/descriptor_read_op.hpp; sourceTree = SOURCE_ROOT; };
+		5509AF85DEAE157A752895C6 /* winrt_resolver_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = winrt_resolver_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/winrt_resolver_service.hpp; sourceTree = SOURCE_ROOT; };
+		55479C49B3DAB29CAADE2753 /* winrt_timer_scheduler.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = winrt_timer_scheduler.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/impl/winrt_timer_scheduler.hpp; sourceTree = SOURCE_ROOT; };
+		55F9A236F8C185B4CB28B215 /* context.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = context.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl/context.hpp; sourceTree = SOURCE_ROOT; };
+		562F112B38ADE0111BEACAA5 /* Server.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Server.h; path = ../../../addons/ofxAsio/src/ofxAsio/UDP/Server.h; sourceTree = SOURCE_ROOT; };
+		58471528289886BF3A17AD91 /* win_iocp_socket_recvmsg_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_iocp_socket_recvmsg_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_iocp_socket_recvmsg_op.hpp; sourceTree = SOURCE_ROOT; };
+		5925E71BE400677F6F404D2D /* hash_map.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = hash_map.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/hash_map.hpp; sourceTree = SOURCE_ROOT; };
+		59C015D9601636D84A54A0FB /* is_buffer_sequence.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = is_buffer_sequence.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/is_buffer_sequence.hpp; sourceTree = SOURCE_ROOT; };
+		5A06B3BF7AEF50DF8FFF57AA /* win_iocp_socket_recv_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_iocp_socket_recv_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_iocp_socket_recv_op.hpp; sourceTree = SOURCE_ROOT; };
+		5B55C8EC1986E9F834A184EC /* multicast.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = multicast.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/multicast.hpp; sourceTree = SOURCE_ROOT; };
+		5E30DCCA8983CD1691DCDEB0 /* operation.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = operation.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/operation.hpp; sourceTree = SOURCE_ROOT; };
+		5E9B6B43A33D82637D68C18F /* buffered_read_stream.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = buffered_read_stream.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/impl/buffered_read_stream.hpp; sourceTree = SOURCE_ROOT; };
+		5F52438BCEFA6F6EFD331611 /* reactive_socket_sendto_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = reactive_socket_sendto_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/reactive_socket_sendto_op.hpp; sourceTree = SOURCE_ROOT; };
+		604DDBEEFF677763AE60C301 /* null_global.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = null_global.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/null_global.hpp; sourceTree = SOURCE_ROOT; };
+		609AABBA757DAC6A341619EC /* time_traits.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = time_traits.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/time_traits.hpp; sourceTree = SOURCE_ROOT; };
+		60AC0965C365C345FA66C302 /* null_event.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = null_event.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/null_event.hpp; sourceTree = SOURCE_ROOT; };
+		60E9E0F01EC9766120DE2538 /* wrapped_handler.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = wrapped_handler.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/wrapped_handler.hpp; sourceTree = SOURCE_ROOT; };
+		616C2549666DDF2F3C055CDB /* winrt_socket_connect_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = winrt_socket_connect_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/winrt_socket_connect_op.hpp; sourceTree = SOURCE_ROOT; };
+		6228C8A75BA71AC3126B49B8 /* dev_poll_reactor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dev_poll_reactor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/dev_poll_reactor.hpp; sourceTree = SOURCE_ROOT; };
+		624F3CE754B52DF29B36E5AB /* winrt_async_manager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = winrt_async_manager.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/winrt_async_manager.hpp; sourceTree = SOURCE_ROOT; };
+		62CCF123338EA2A77E9CE296 /* timer_queue.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = timer_queue.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/timer_queue.hpp; sourceTree = SOURCE_ROOT; };
+		6439976B7926812B7EEABA1B /* seq_packet_protocol.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = seq_packet_protocol.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/generic/seq_packet_protocol.hpp; sourceTree = SOURCE_ROOT; };
+		6514BEDE85B64230D695D541 /* associated_allocator.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = associated_allocator.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/associated_allocator.hpp; sourceTree = SOURCE_ROOT; };
+		6585677D8280D474768001A0 /* winrt_ssocket_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = winrt_ssocket_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/winrt_ssocket_service.hpp; sourceTree = SOURCE_ROOT; };
+		660AC7B5CE4838F59E53104D /* buffered_write_stream_fwd.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = buffered_write_stream_fwd.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/buffered_write_stream_fwd.hpp; sourceTree = SOURCE_ROOT; };
+		673EEDDDD6B78AEAD0E1064C /* bind_handler.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = bind_handler.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/bind_handler.hpp; sourceTree = SOURCE_ROOT; };
+		67D50DF306535EBD93D2ECDD /* unyield.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = unyield.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/unyield.hpp; sourceTree = SOURCE_ROOT; };
+		67FF6238E85A26A572B0896C /* reactive_socket_recv_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = reactive_socket_recv_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/reactive_socket_recv_op.hpp; sourceTree = SOURCE_ROOT; };
+		68213D0144638260B0565525 /* connect.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = connect.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/connect.hpp; sourceTree = SOURCE_ROOT; };
+		686BABAF003B92D19C70E537 /* buffered_stream_storage.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = buffered_stream_storage.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/buffered_stream_storage.hpp; sourceTree = SOURCE_ROOT; };
+		692D81ACFC6C4757EEE6FED6 /* uses_executor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = uses_executor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/uses_executor.hpp; sourceTree = SOURCE_ROOT; };
+		6930DE88EE24C94594FF5700 /* resolver_service_base.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = resolver_service_base.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/resolver_service_base.hpp; sourceTree = SOURCE_ROOT; };
+		69D19A4577625102E471E443 /* password_callback.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = password_callback.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl/detail/password_callback.hpp; sourceTree = SOURCE_ROOT; };
+		69D56260343E8B68B1DF46AE /* read_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = read_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl/detail/read_op.hpp; sourceTree = SOURCE_ROOT; };
+		6A0D9CE3E11D0B33A8E7371B /* basic_signal_set.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_signal_set.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/basic_signal_set.hpp; sourceTree = SOURCE_ROOT; };
+		6A2BC29B105FECC1EB0AE883 /* address.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = address.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/impl/address.hpp; sourceTree = SOURCE_ROOT; };
+		6A33C938B9ACD14AFA5EC14F /* basic_endpoint.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_endpoint.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/impl/basic_endpoint.hpp; sourceTree = SOURCE_ROOT; };
+		6AB7778E2473A6F8D3BF8409 /* win_mutex.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_mutex.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_mutex.hpp; sourceTree = SOURCE_ROOT; };
+		6BB81202AC794E310F778358 /* io_context.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = io_context.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ts/io_context.hpp; sourceTree = SOURCE_ROOT; };
+		6D1DA5AA0F788E77F81484BB /* coroutine.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = coroutine.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/coroutine.hpp; sourceTree = SOURCE_ROOT; };
+		6E3FF290E23AEC6C3F1BA962 /* buffer.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = buffer.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ts/buffer.hpp; sourceTree = SOURCE_ROOT; };
+		6E76E98712C629D339FEB13C /* atomic_count.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = atomic_count.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/atomic_count.hpp; sourceTree = SOURCE_ROOT; };
+		6E7EFE8F978C10E030A4294B /* basic_handle.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_handle.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/windows/basic_handle.hpp; sourceTree = SOURCE_ROOT; };
+		6E803D48EDD3D39DE4A57E08 /* datagram_protocol.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = datagram_protocol.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/local/datagram_protocol.hpp; sourceTree = SOURCE_ROOT; };
+		6F657AAD92A670ABE4590DB7 /* engine.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = engine.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl/detail/engine.hpp; sourceTree = SOURCE_ROOT; };
+		6F9E5DB471695B5EBEDD40FD /* strand_executor_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = strand_executor_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/strand_executor_service.hpp; sourceTree = SOURCE_ROOT; };
+		6FC64AA207B8F6F87216A689 /* shutdown_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = shutdown_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl/detail/shutdown_op.hpp; sourceTree = SOURCE_ROOT; };
+		6FCB7261CF4B4C14C8DEEB5A /* handler_tracking.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = handler_tracking.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/handler_tracking.hpp; sourceTree = SOURCE_ROOT; };
+		70390CB88F2ABC1517A3979E /* context_base.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = context_base.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl/context_base.hpp; sourceTree = SOURCE_ROOT; };
+		708E19259C27D6FCF94A3444 /* basic_socket_iostream.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_socket_iostream.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/basic_socket_iostream.hpp; sourceTree = SOURCE_ROOT; };
+		7092ABFFBA314BB735A29F50 /* win_iocp_overlapped_ptr.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_iocp_overlapped_ptr.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_iocp_overlapped_ptr.hpp; sourceTree = SOURCE_ROOT; };
+		710767902AFAAE2AFCE45A7C /* resolver_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = resolver_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/resolver_service.hpp; sourceTree = SOURCE_ROOT; };
+		710B312C1C9C62DE9CAF1001 /* thread_pool.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = thread_pool.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ts/thread_pool.hpp; sourceTree = SOURCE_ROOT; };
+		71E91C69D5EE76B07E5391B7 /* stream_descriptor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = stream_descriptor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/posix/stream_descriptor.hpp; sourceTree = SOURCE_ROOT; };
+		72356174603F6A00AD568AB2 /* random_access_handle.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = random_access_handle.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/windows/random_access_handle.hpp; sourceTree = SOURCE_ROOT; };
+		7360375BF95E9932C80F1E02 /* win_iocp_wait_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_iocp_wait_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_iocp_wait_op.hpp; sourceTree = SOURCE_ROOT; };
+		74006C642A67640963D88C98 /* basic_resolver_results.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_resolver_results.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/basic_resolver_results.hpp; sourceTree = SOURCE_ROOT; };
+		74BD1EE92FB2C73A892C53EF /* DataGram.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = DataGram.h; path = ../../../addons/ofxAsio/src/ofxAsio/UDP/DataGram.h; sourceTree = SOURCE_ROOT; };
+		7555623871227C73BF52F47F /* reactive_serial_port_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = reactive_serial_port_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/reactive_serial_port_service.hpp; sourceTree = SOURCE_ROOT; };
+		760C2F05F2B8C90732701AA3 /* Client.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Client.h; path = ../../../addons/ofxAsio/src/ofxAsio/UDP/Client.h; sourceTree = SOURCE_ROOT; };
+		766EE214327A727BE35F48FC /* completion_condition.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = completion_condition.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/completion_condition.hpp; sourceTree = SOURCE_ROOT; };
+		76A883B09C03FA56D4FBAB46 /* reactive_null_buffers_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = reactive_null_buffers_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/reactive_null_buffers_op.hpp; sourceTree = SOURCE_ROOT; };
+		77C59BB24929F373EFA004F6 /* defer.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = defer.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/impl/defer.hpp; sourceTree = SOURCE_ROOT; };
+		783DCF9FB5D44DCB6D606F91 /* descriptor_ops.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = descriptor_ops.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/descriptor_ops.hpp; sourceTree = SOURCE_ROOT; };
+		78911C94E3F46D24921E9B94 /* stream_base.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = stream_base.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl/stream_base.hpp; sourceTree = SOURCE_ROOT; };
+		7A25CBD0120B33298D0E660D /* src.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = src.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl/impl/src.hpp; sourceTree = SOURCE_ROOT; };
+		7A9DCADA7744BC2CDDC56C97 /* basic_endpoint.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_endpoint.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/local/basic_endpoint.hpp; sourceTree = SOURCE_ROOT; };
+		7AADE185063393FFFDE83B26 /* serial_port.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = serial_port.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/serial_port.hpp; sourceTree = SOURCE_ROOT; };
+		7B1F394B812702BB12FEBFAC /* post.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = post.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/impl/post.hpp; sourceTree = SOURCE_ROOT; };
+		7B3160D888EC4F15C1B16B48 /* reactive_socket_send_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = reactive_socket_send_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/reactive_socket_send_op.hpp; sourceTree = SOURCE_ROOT; };
+		7C18456BACB11EF33EB811F0 /* handshake_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = handshake_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl/detail/handshake_op.hpp; sourceTree = SOURCE_ROOT; };
+		7C50F9BF76DC955E1F6ECC6B /* win_iocp_serial_port_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_iocp_serial_port_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_iocp_serial_port_service.hpp; sourceTree = SOURCE_ROOT; };
+		7C87A94363D4B55B0536EA52 /* fenced_block.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = fenced_block.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/fenced_block.hpp; sourceTree = SOURCE_ROOT; };
+		7D2A7EABC128A85C1606628D /* seq_packet_socket_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = seq_packet_socket_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/seq_packet_socket_service.hpp; sourceTree = SOURCE_ROOT; };
+		7E8F8FDB88E82C7B94D2D216 /* address_v4_range.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = address_v4_range.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/address_v4_range.hpp; sourceTree = SOURCE_ROOT; };
+		7EAEF64BFEFBE58037CD8E22 /* win_global.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_global.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_global.hpp; sourceTree = SOURCE_ROOT; };
+		7F6A0BA91FD9902A25ACF34D /* thread.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = thread.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/thread.hpp; sourceTree = SOURCE_ROOT; };
+		817398611790BAF31D32FE62 /* executor_work_guard.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = executor_work_guard.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/executor_work_guard.hpp; sourceTree = SOURCE_ROOT; };
+		819BD7E4B313BECF27D9E403 /* basic_stream_descriptor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_stream_descriptor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/posix/basic_stream_descriptor.hpp; sourceTree = SOURCE_ROOT; };
+		81E9B5A95BDA7C9B3634ABE3 /* epoll_reactor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = epoll_reactor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/epoll_reactor.hpp; sourceTree = SOURCE_ROOT; };
+		821608D256CA4B05AE15909C /* work_dispatcher.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = work_dispatcher.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/work_dispatcher.hpp; sourceTree = SOURCE_ROOT; };
+		8337FBF099F67A40E8A8D459 /* cstddef.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = cstddef.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/cstddef.hpp; sourceTree = SOURCE_ROOT; };
+		8374CAD7B392061E13A03C98 /* gcc_sync_fenced_block.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gcc_sync_fenced_block.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/gcc_sync_fenced_block.hpp; sourceTree = SOURCE_ROOT; };
+		83EEC635FC9C4792961C8832 /* null_fenced_block.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = null_fenced_block.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/null_fenced_block.hpp; sourceTree = SOURCE_ROOT; };
+		844F1D5549229C6A40742296 /* raw_protocol.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = raw_protocol.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/generic/raw_protocol.hpp; sourceTree = SOURCE_ROOT; };
+		854359C3DDEC1C7972E22936 /* write_at.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = write_at.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/write_at.hpp; sourceTree = SOURCE_ROOT; };
+		8660C1161920173349A5C47F /* null_reactor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = null_reactor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/null_reactor.hpp; sourceTree = SOURCE_ROOT; };
+		868DA64B2F20396AB94BB146 /* handler_invoke_helpers.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = handler_invoke_helpers.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/handler_invoke_helpers.hpp; sourceTree = SOURCE_ROOT; };
+		86B08C66D40CE69B66AF314C /* basic_io_object.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_io_object.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/basic_io_object.hpp; sourceTree = SOURCE_ROOT; };
+		886C42675AD59BFACF98FF74 /* ssl.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ssl.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl.hpp; sourceTree = SOURCE_ROOT; };
+		888308B79411450AE61D158F /* socket_option.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = socket_option.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/detail/socket_option.hpp; sourceTree = SOURCE_ROOT; };
+		89136E4AAF57FE586B1AB7D8 /* Includes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Includes.h; path = ../../../addons/ofxAsio/src/ofxAsio/Includes.h; sourceTree = SOURCE_ROOT; };
+		897DFAAE7C5F114979334AB4 /* strand_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = strand_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/impl/strand_service.hpp; sourceTree = SOURCE_ROOT; };
+		89AF73EF0D5F51553C9265E3 /* thread_pool.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = thread_pool.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/thread_pool.hpp; sourceTree = SOURCE_ROOT; };
+		89BB1D49B71C62EAD98669D6 /* null_thread.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = null_thread.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/null_thread.hpp; sourceTree = SOURCE_ROOT; };
+		89EC26311E487F9B8FD7A457 /* tss_ptr.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = tss_ptr.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/tss_ptr.hpp; sourceTree = SOURCE_ROOT; };
+		8A8A2472B8167E64CB34A300 /* posix_event.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = posix_event.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/posix_event.hpp; sourceTree = SOURCE_ROOT; };
+		8A9ADA4BDBE8734DD165AA93 /* date_time_fwd.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = date_time_fwd.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/date_time_fwd.hpp; sourceTree = SOURCE_ROOT; };
+		8A9E5E731AD5252966C02193 /* strand.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = strand.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/strand.hpp; sourceTree = SOURCE_ROOT; };
+		8B17D8DE7262C736E9875184 /* handler_alloc_helpers.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = handler_alloc_helpers.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/handler_alloc_helpers.hpp; sourceTree = SOURCE_ROOT; };
+		8B3C13251FBB568BFD0EB89B /* posix_mutex.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = posix_mutex.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/posix_mutex.hpp; sourceTree = SOURCE_ROOT; };
+		8CCEE3666BB53CA4560D9F1D /* reactive_wait_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = reactive_wait_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/reactive_wait_op.hpp; sourceTree = SOURCE_ROOT; };
+		8D02DE8F32CC92A47D1CDC14 /* address_v4.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = address_v4.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/address_v4.hpp; sourceTree = SOURCE_ROOT; };
+		8D56ED4BEDE94EF51249BF2B /* basic_waitable_timer.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_waitable_timer.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/basic_waitable_timer.hpp; sourceTree = SOURCE_ROOT; };
+		8D69533A53ED061E713EAF84 /* ofxTurboJpeg.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxTurboJpeg.h; path = ../../../addons/ofxTurboJpeg/src/ofxTurboJpeg.h; sourceTree = SOURCE_ROOT; };
+		8E6C9F86D76B5D5E7172AC5F /* system_error.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = system_error.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/system_error.hpp; sourceTree = SOURCE_ROOT; };
+		8EC2D15CCA1155B94DD454A8 /* placeholders.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = placeholders.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/placeholders.hpp; sourceTree = SOURCE_ROOT; };
+		8FC17C3EEC42DCD2F445C734 /* basic_stream_handle.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_stream_handle.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/windows/basic_stream_handle.hpp; sourceTree = SOURCE_ROOT; };
+		913C642C461C7F104A8303D4 /* executor_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = executor_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/executor_op.hpp; sourceTree = SOURCE_ROOT; };
+		91FD0DEF2FA2657921454A85 /* posix_static_mutex.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = posix_static_mutex.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/posix_static_mutex.hpp; sourceTree = SOURCE_ROOT; };
+		9383B5262D5753FFC01BA6DA /* execution_context.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = execution_context.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/impl/execution_context.hpp; sourceTree = SOURCE_ROOT; };
+		95AC34401B5F678224578DDF /* throw_exception.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = throw_exception.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/throw_exception.hpp; sourceTree = SOURCE_ROOT; };
+		95F087FAA12134D5A2F61C73 /* winsock_init.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = winsock_init.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/winsock_init.hpp; sourceTree = SOURCE_ROOT; };
+		96448D900A8D5610E8A20133 /* basic_resolver.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_resolver.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/basic_resolver.hpp; sourceTree = SOURCE_ROOT; };
+		966A350BFA6B3E5D0DD6B00D /* deadline_timer_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = deadline_timer_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/deadline_timer_service.hpp; sourceTree = SOURCE_ROOT; };
+		97B42900A1743036AA4AAA96 /* v6_only.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = v6_only.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/v6_only.hpp; sourceTree = SOURCE_ROOT; };
+		9852937BE5925F152249550F /* io_control.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = io_control.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/io_control.hpp; sourceTree = SOURCE_ROOT; };
+		9A06147B49953276C2D3BE66 /* verify_context.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = verify_context.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl/verify_context.hpp; sourceTree = SOURCE_ROOT; };
+		9ADCD13E05775EA78D0B05BE /* win_static_mutex.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_static_mutex.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_static_mutex.hpp; sourceTree = SOURCE_ROOT; };
+		9B63C724C3601A5051A3417C /* chrono_time_traits.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = chrono_time_traits.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/chrono_time_traits.hpp; sourceTree = SOURCE_ROOT; };
+		9BA02418C612FE2C9EC1F426 /* scheduler.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = scheduler.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/scheduler.hpp; sourceTree = SOURCE_ROOT; };
+		9BD1B74CAB39DF7D09FCD7B8 /* static_mutex.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = static_mutex.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/static_mutex.hpp; sourceTree = SOURCE_ROOT; };
+		9BEA906CA719D4D31AAC63F2 /* winrt_socket_send_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = winrt_socket_send_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/winrt_socket_send_op.hpp; sourceTree = SOURCE_ROOT; };
+		9C59F9D145EBD3A2274EAC0B /* service_registry.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = service_registry.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/service_registry.hpp; sourceTree = SOURCE_ROOT; };
+		9E18D4927032A63DCD97B27F /* pop_options.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = pop_options.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/pop_options.hpp; sourceTree = SOURCE_ROOT; };
+		9F0697DADC8F21469BE45E6E /* address_v4.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = address_v4.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/impl/address_v4.hpp; sourceTree = SOURCE_ROOT; };
+		9F21F5270D68B0ACD052D9CE /* basic_endpoint.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_endpoint.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/basic_endpoint.hpp; sourceTree = SOURCE_ROOT; };
+		9FB6AB9FBCBE40C353223464 /* dev_poll_reactor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dev_poll_reactor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/impl/dev_poll_reactor.hpp; sourceTree = SOURCE_ROOT; };
+		A001AA58F303F8DECF5CD66B /* win_iocp_overlapped_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_iocp_overlapped_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_iocp_overlapped_op.hpp; sourceTree = SOURCE_ROOT; };
+		A04A5A633FDE3DD578D893B0 /* local_free_on_block_exit.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = local_free_on_block_exit.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/local_free_on_block_exit.hpp; sourceTree = SOURCE_ROOT; };
+		A18605CFF41500CB6A3BAEB3 /* executor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = executor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/executor.hpp; sourceTree = SOURCE_ROOT; };
+		A1CBFFB561734DA1A2436B95 /* object_handle_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = object_handle_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/windows/object_handle_service.hpp; sourceTree = SOURCE_ROOT; };
+		A23850662B73135870F83A22 /* serial_port_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = serial_port_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/serial_port_service.hpp; sourceTree = SOURCE_ROOT; };
+		A30ABEBC1859F9065EE29B28 /* null_tss_ptr.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = null_tss_ptr.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/null_tss_ptr.hpp; sourceTree = SOURCE_ROOT; };
+		A3DE0C6EB501FFD459E93CFA /* mutex.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mutex.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/mutex.hpp; sourceTree = SOURCE_ROOT; };
+		A42AED13264695B1B68FA860 /* basic_random_access_handle.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_random_access_handle.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/windows/basic_random_access_handle.hpp; sourceTree = SOURCE_ROOT; };
+		A4565E6C9AA93CCF77480607 /* reactive_socket_accept_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = reactive_socket_accept_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/reactive_socket_accept_op.hpp; sourceTree = SOURCE_ROOT; };
+		A48124A415F76B353B318C21 /* solaris_fenced_block.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = solaris_fenced_block.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/solaris_fenced_block.hpp; sourceTree = SOURCE_ROOT; };
+		A4BB492CF1CB647C6ED327EC /* read_until.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = read_until.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/impl/read_until.hpp; sourceTree = SOURCE_ROOT; };
+		A5C3D9EC0007A906F9394C3E /* signal_blocker.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = signal_blocker.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/signal_blocker.hpp; sourceTree = SOURCE_ROOT; };
+		A684A0E332CB9CF1607886ED /* stream_socket_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = stream_socket_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/stream_socket_service.hpp; sourceTree = SOURCE_ROOT; };
+		A68BC4CD986ADD06CA47EC76 /* error_code.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = error_code.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/error_code.hpp; sourceTree = SOURCE_ROOT; };
+		A74DED40264C6BD3AC626D06 /* posix_tss_ptr.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = posix_tss_ptr.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/posix_tss_ptr.hpp; sourceTree = SOURCE_ROOT; };
+		A80AF084C5EC9ABC91783337 /* handler_alloc_hook.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = handler_alloc_hook.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/handler_alloc_hook.hpp; sourceTree = SOURCE_ROOT; };
+		A84CE2BBB81B5E3F127C4591 /* socket_base.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = socket_base.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/socket_base.hpp; sourceTree = SOURCE_ROOT; };
+		AA21F29D36A9F07930064646 /* thread_context.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = thread_context.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/thread_context.hpp; sourceTree = SOURCE_ROOT; };
+		AA3293C40A6FB10110E565FC /* timer_scheduler.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = timer_scheduler.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/timer_scheduler.hpp; sourceTree = SOURCE_ROOT; };
+		AA588B0C8B387C7A188AEF0E /* global.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = global.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/global.hpp; sourceTree = SOURCE_ROOT; };
+		AA5A2F2A8514AE8C836C4E18 /* null_static_mutex.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = null_static_mutex.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/null_static_mutex.hpp; sourceTree = SOURCE_ROOT; };
+		AA67771D2C5ECE1544B86D6C /* basic_object_handle.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_object_handle.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/windows/basic_object_handle.hpp; sourceTree = SOURCE_ROOT; };
+		AA78DDDBF0C134F06737A41A /* service_registry.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = service_registry.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/impl/service_registry.hpp; sourceTree = SOURCE_ROOT; };
+		AA8013132F02BF405ACC3403 /* buffered_stream.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = buffered_stream.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/buffered_stream.hpp; sourceTree = SOURCE_ROOT; };
+		AAB68480869393B375503906 /* buffered_read_stream_fwd.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = buffered_read_stream_fwd.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/buffered_read_stream_fwd.hpp; sourceTree = SOURCE_ROOT; };
+		AAFEE42632B79ED5306B1595 /* EndPoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = EndPoint.h; path = ../../../addons/ofxAsio/src/ofxAsio/UDP/EndPoint.h; sourceTree = SOURCE_ROOT; };
+		AB1C35F723D6CA01F1C6E86B /* write_at.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = write_at.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/impl/write_at.hpp; sourceTree = SOURCE_ROOT; };
+		ABE09A06FFE25B3E65F74C43 /* basic_datagram_socket.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_datagram_socket.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/basic_datagram_socket.hpp; sourceTree = SOURCE_ROOT; };
+		AD66CA5A1A718998A1F59DDA /* array_fwd.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = array_fwd.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/array_fwd.hpp; sourceTree = SOURCE_ROOT; };
+		ADD79B5A9E576AA9B95EE1F5 /* fd_set_adapter.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = fd_set_adapter.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/fd_set_adapter.hpp; sourceTree = SOURCE_ROOT; };
+		AE489D136EF14939A709A7BB /* noncopyable.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = noncopyable.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/noncopyable.hpp; sourceTree = SOURCE_ROOT; };
+		AEA1EB61F521951A7667A105 /* error.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = error.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/error.hpp; sourceTree = SOURCE_ROOT; };
+		AF41BAC1A9BDDD8E1E7F1E61 /* io.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = io.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl/detail/io.hpp; sourceTree = SOURCE_ROOT; };
+		B02433289588D12CA4B351E0 /* buffered_write_stream.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = buffered_write_stream.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/impl/buffered_write_stream.hpp; sourceTree = SOURCE_ROOT; };
+		B15353EEAF49156F82D6295D /* handler_type_requirements.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = handler_type_requirements.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/handler_type_requirements.hpp; sourceTree = SOURCE_ROOT; };
+		B179B26E9A23003199AD3B75 /* datagram_protocol.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = datagram_protocol.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/generic/datagram_protocol.hpp; sourceTree = SOURCE_ROOT; };
+		B19477E68185B2A5CAD3544E /* reactive_socket_recvfrom_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = reactive_socket_recvfrom_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/reactive_socket_recvfrom_op.hpp; sourceTree = SOURCE_ROOT; };
+		B1A21E6986AF8647FE690FA2 /* buffered_handshake_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = buffered_handshake_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl/detail/buffered_handshake_op.hpp; sourceTree = SOURCE_ROOT; };
+		B26D2C3DBD42B77664E67EC6 /* post.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = post.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/post.hpp; sourceTree = SOURCE_ROOT; };
+		B2F2D35B17ED43214C329BA3 /* connect.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = connect.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/impl/connect.hpp; sourceTree = SOURCE_ROOT; };
+		B56FF06E22AF8827040CE362 /* basic_socket_acceptor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_socket_acceptor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/basic_socket_acceptor.hpp; sourceTree = SOURCE_ROOT; };
+		B687AA843E595EA6C591EAC0 /* win_iocp_socket_recvfrom_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_iocp_socket_recvfrom_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_iocp_socket_recvfrom_op.hpp; sourceTree = SOURCE_ROOT; };
+		B6CA5EBBDD946905CDF23887 /* object_pool.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = object_pool.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/object_pool.hpp; sourceTree = SOURCE_ROOT; };
+		B76993A2901AE7E7C217F7F3 /* call_stack.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = call_stack.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/call_stack.hpp; sourceTree = SOURCE_ROOT; };
+		B81FA654CF78BCD3764F7B2D /* descriptor_base.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = descriptor_base.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/posix/descriptor_base.hpp; sourceTree = SOURCE_ROOT; };
+		B8BB7E317197D72231BA1303 /* reactive_socket_recvmsg_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = reactive_socket_recvmsg_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/reactive_socket_recvmsg_op.hpp; sourceTree = SOURCE_ROOT; };
+		B920EFBB975AF81E1A323723 /* io_context.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = io_context.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/io_context.hpp; sourceTree = SOURCE_ROOT; };
+		BCAB0FB4288ADACFCD37FDFB /* base_from_completion_cond.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = base_from_completion_cond.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/base_from_completion_cond.hpp; sourceTree = SOURCE_ROOT; };
+		BCC5C751ED118AE633E2E272 /* dependent_type.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dependent_type.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/dependent_type.hpp; sourceTree = SOURCE_ROOT; };
+		BD1FDF9EF341741ABCFFD6D5 /* win_iocp_socket_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_iocp_socket_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_iocp_socket_service.hpp; sourceTree = SOURCE_ROOT; };
+		BD42A869872CD103A5144E92 /* write.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = write.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/impl/write.hpp; sourceTree = SOURCE_ROOT; };
+		BDF7F71C96B6455A72BFBE18 /* win_iocp_handle_read_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_iocp_handle_read_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_iocp_handle_read_op.hpp; sourceTree = SOURCE_ROOT; };
+		BECE999338BAE6EDE52F52DC /* network_v4.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = network_v4.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/impl/network_v4.hpp; sourceTree = SOURCE_ROOT; };
+		BF03657F65B8E42ADDE811F9 /* timer_queue_set.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = timer_queue_set.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/timer_queue_set.hpp; sourceTree = SOURCE_ROOT; };
+		C1FCB1637A6F092DA00D60D2 /* handler_continuation_hook.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = handler_continuation_hook.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/handler_continuation_hook.hpp; sourceTree = SOURCE_ROOT; };
+		C2A77D438282CB199C7AD4A1 /* signal_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = signal_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/signal_op.hpp; sourceTree = SOURCE_ROOT; };
+		C2C279534DCCAA0DA5BB6AC4 /* assert.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = assert.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/assert.hpp; sourceTree = SOURCE_ROOT; };
+		C3052431E9B86ACB52D6674D /* win_iocp_socket_send_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_iocp_socket_send_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_iocp_socket_send_op.hpp; sourceTree = SOURCE_ROOT; };
+		C469D692B55EADFA1A64B55E /* read_until.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = read_until.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/read_until.hpp; sourceTree = SOURCE_ROOT; };
+		C570A07960A56EB2723C8889 /* win_tss_ptr.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_tss_ptr.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_tss_ptr.hpp; sourceTree = SOURCE_ROOT; };
+		C7499A990D9A68CA36690E99 /* high_resolution_timer.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = high_resolution_timer.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/high_resolution_timer.hpp; sourceTree = SOURCE_ROOT; };
+		C8297FCBC00B05A5D9CDE89B /* basic_resolver_iterator.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_resolver_iterator.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/basic_resolver_iterator.hpp; sourceTree = SOURCE_ROOT; };
+		C86B00919A9652ACBA23762B /* null_signal_blocker.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = null_signal_blocker.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/null_signal_blocker.hpp; sourceTree = SOURCE_ROOT; };
+		C960392CD8B223214ADF1EE3 /* openssl_types.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = openssl_types.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl/detail/openssl_types.hpp; sourceTree = SOURCE_ROOT; };
+		CA77F184390483BCABB30959 /* reactive_socket_service_base.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = reactive_socket_service_base.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/reactive_socket_service_base.hpp; sourceTree = SOURCE_ROOT; };
+		CA8E3D1E66BBB49C594276AA /* basic_streambuf_fwd.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_streambuf_fwd.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/basic_streambuf_fwd.hpp; sourceTree = SOURCE_ROOT; };
+		CADC2046EE76A645E7BD9B51 /* gcc_arm_fenced_block.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = gcc_arm_fenced_block.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/gcc_arm_fenced_block.hpp; sourceTree = SOURCE_ROOT; };
+		CB5FDC71DB9888CF3516C66D /* keyword_tss_ptr.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = keyword_tss_ptr.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/keyword_tss_ptr.hpp; sourceTree = SOURCE_ROOT; };
+		CC7594CA5E21F32F237CA87E /* ofxTurboJpeg.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxTurboJpeg.cpp; path = ../../../addons/ofxTurboJpeg/src/ofxTurboJpeg.cpp; sourceTree = SOURCE_ROOT; };
+		CC996814A2C6DBA33C153612 /* spawn.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = spawn.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/impl/spawn.hpp; sourceTree = SOURCE_ROOT; };
+		CD3D87815DD57F5B8C7311C7 /* socket_types.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = socket_types.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/socket_types.hpp; sourceTree = SOURCE_ROOT; };
+		CD68C8911D222C602E9C1600 /* address_v6.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = address_v6.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/address_v6.hpp; sourceTree = SOURCE_ROOT; };
+		CED1DA3AB9F37C6A1CEA6B54 /* win_fenced_block.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_fenced_block.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_fenced_block.hpp; sourceTree = SOURCE_ROOT; };
+		CFECEA100F4520307FCEB4C2 /* thread_pool.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = thread_pool.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/impl/thread_pool.hpp; sourceTree = SOURCE_ROOT; };
+		D01CA9B58D95A69160544612 /* timer_queue_ptime.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = timer_queue_ptime.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/timer_queue_ptime.hpp; sourceTree = SOURCE_ROOT; };
+		D25220E85E895BD582C3F56E /* thread.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = thread.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/thread.hpp; sourceTree = SOURCE_ROOT; };
+		D287F556ED4019A950743018 /* timer_queue_base.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = timer_queue_base.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/timer_queue_base.hpp; sourceTree = SOURCE_ROOT; };
+		D442EC917A292A368CE3D23E /* buffer_sequence_adapter.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = buffer_sequence_adapter.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/buffer_sequence_adapter.hpp; sourceTree = SOURCE_ROOT; };
+		D4A8A980F53AF8C902DD57F3 /* stream_descriptor_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = stream_descriptor_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/posix/stream_descriptor_service.hpp; sourceTree = SOURCE_ROOT; };
+		D5918DB991B106B3ABE9519F /* basic_deadline_timer.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_deadline_timer.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/basic_deadline_timer.hpp; sourceTree = SOURCE_ROOT; };
+		D665974205AB4C5BED5DE458 /* serial_port_base.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = serial_port_base.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/serial_port_base.hpp; sourceTree = SOURCE_ROOT; };
+		D71EFEA780758D007AEE09C3 /* endpoint.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = endpoint.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/local/detail/endpoint.hpp; sourceTree = SOURCE_ROOT; };
+		D8CEDB94615BD1095077D730 /* read.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = read.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/impl/read.hpp; sourceTree = SOURCE_ROOT; };
+		D9163C90699EF897E0A80B2C /* kqueue_reactor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = kqueue_reactor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/impl/kqueue_reactor.hpp; sourceTree = SOURCE_ROOT; };
+		D9D6AEC296BE99134F958814 /* is_write_buffered.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = is_write_buffered.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/is_write_buffered.hpp; sourceTree = SOURCE_ROOT; };
+		DA2A96841464C39E35174989 /* dispatch.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = dispatch.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/impl/dispatch.hpp; sourceTree = SOURCE_ROOT; };
+		DA32245F47B248F30CB039AF /* scoped_ptr.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = scoped_ptr.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/scoped_ptr.hpp; sourceTree = SOURCE_ROOT; };
+		DA43E9BC068784AD40BF213C /* winrt_ssocket_service_base.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = winrt_ssocket_service_base.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/winrt_ssocket_service_base.hpp; sourceTree = SOURCE_ROOT; };
+		DB66BB9B854E44C5F2C1F546 /* system_executor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = system_executor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/system_executor.hpp; sourceTree = SOURCE_ROOT; };
+		DD04DBE6F9B07AC010983AF7 /* signal_set_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = signal_set_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/signal_set_service.hpp; sourceTree = SOURCE_ROOT; };
+		DE0D92E0464C7773B79CFE57 /* pipe_select_interrupter.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = pipe_select_interrupter.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/pipe_select_interrupter.hpp; sourceTree = SOURCE_ROOT; };
+		DE3DB7C34E0494749B2B6274 /* basic_resolver_entry.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_resolver_entry.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/basic_resolver_entry.hpp; sourceTree = SOURCE_ROOT; };
+		DF1575AE757A9C7B78B1C0C4 /* executor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = executor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ts/executor.hpp; sourceTree = SOURCE_ROOT; };
+		DF5542C68EB2C36D6A295279 /* write_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = write_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl/detail/write_op.hpp; sourceTree = SOURCE_ROOT; };
+		E027E1D69A449AD6563B9D53 /* wait_handler.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = wait_handler.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/wait_handler.hpp; sourceTree = SOURCE_ROOT; };
+		E132CBEF2AC272114A204891 /* context.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = context.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl/impl/context.hpp; sourceTree = SOURCE_ROOT; };
+		E1EEFE46968F2C043C059657 /* winrt_socket_recv_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = winrt_socket_recv_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/winrt_socket_recv_op.hpp; sourceTree = SOURCE_ROOT; };
+		E2314C6928909C6FCD0888D9 /* is_executor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = is_executor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/is_executor.hpp; sourceTree = SOURCE_ROOT; };
+		E28F780BC09483ED2B97BADE /* networking.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = networking.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ts/networking.hpp; sourceTree = SOURCE_ROOT; };
+		E297BCDD2926B1ABFD92AC3A /* reactive_descriptor_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = reactive_descriptor_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/reactive_descriptor_service.hpp; sourceTree = SOURCE_ROOT; };
+		E2FB48C1D44D6EAC465F0889 /* descriptor_write_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = descriptor_write_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/descriptor_write_op.hpp; sourceTree = SOURCE_ROOT; };
+		E332A8F4F6BEE7502A39B24F /* stream_handle.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = stream_handle.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/windows/stream_handle.hpp; sourceTree = SOURCE_ROOT; };
+		E3728FB8D3B2E6CFCAB1C8CB /* signal_set_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = signal_set_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/signal_set_service.hpp; sourceTree = SOURCE_ROOT; };
+		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E436195E59FBEE3F89631994 /* random_access_handle_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = random_access_handle_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/windows/random_access_handle_service.hpp; sourceTree = SOURCE_ROOT; };
+		E4524751A76BAE65CE18D112 /* object_handle.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = object_handle.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/windows/object_handle.hpp; sourceTree = SOURCE_ROOT; };
+		E4B69B5B0A3A1756003C02F2 /* jpeg_streamDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jpeg_streamDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
+		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		E4E02B90B6CE46D9CD2313F9 /* socket_acceptor_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = socket_acceptor_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/socket_acceptor_service.hpp; sourceTree = SOURCE_ROOT; };
+		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
+		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		E58BC592B46A730772A6B324 /* timer.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = timer.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ts/timer.hpp; sourceTree = SOURCE_ROOT; };
+		E5EF0FA01CF4B985F0A96EFC /* posix_signal_blocker.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = posix_signal_blocker.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/posix_signal_blocker.hpp; sourceTree = SOURCE_ROOT; };
+		E626DC73779AE97B399C6B43 /* signal_handler.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = signal_handler.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/signal_handler.hpp; sourceTree = SOURCE_ROOT; };
+		E7EE113F792324B72F5067AF /* stream_protocol.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = stream_protocol.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/local/stream_protocol.hpp; sourceTree = SOURCE_ROOT; };
+		E955657DB43E903F2343DF97 /* io_service_strand.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = io_service_strand.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/io_service_strand.hpp; sourceTree = SOURCE_ROOT; };
+		E987F830CD403E17D4F71FE7 /* win_thread.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_thread.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_thread.hpp; sourceTree = SOURCE_ROOT; };
+		EAA2C9AED1885CCFC6DF00A9 /* thread_info_base.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = thread_info_base.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/thread_info_base.hpp; sourceTree = SOURCE_ROOT; };
+		EAB9BB32ED81B9A6CC3E19DC /* connect_pair.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = connect_pair.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/local/connect_pair.hpp; sourceTree = SOURCE_ROOT; };
+		EAFCB5F48A4DF34D66A728D6 /* basic_socket.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_socket.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/basic_socket.hpp; sourceTree = SOURCE_ROOT; };
+		EB2A7627E8D016117F2814CB /* buffer_resize_guard.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = buffer_resize_guard.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/buffer_resize_guard.hpp; sourceTree = SOURCE_ROOT; };
+		EB7F4824E75C010BF1545CB0 /* win_iocp_thread_info.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_iocp_thread_info.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_iocp_thread_info.hpp; sourceTree = SOURCE_ROOT; };
+		EB80C171EC0D2D09D145C1B9 /* socket_holder.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = socket_holder.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/socket_holder.hpp; sourceTree = SOURCE_ROOT; };
+		EBAB939CCD955D1CDCFE4CDE /* reactor_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = reactor_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/reactor_op.hpp; sourceTree = SOURCE_ROOT; };
+		EC7D8F7DFAE0B55C89AAD3E4 /* thread_group.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = thread_group.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/thread_group.hpp; sourceTree = SOURCE_ROOT; };
+		ED6268E7A0A1C3A3F38E7B1E /* consuming_buffers.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = consuming_buffers.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/consuming_buffers.hpp; sourceTree = SOURCE_ROOT; };
+		EF5FFC08FE62C982E4F34800 /* wait_traits.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = wait_traits.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/wait_traits.hpp; sourceTree = SOURCE_ROOT; };
+		F091467166E9EF44E2362144 /* resolver_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = resolver_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/resolver_service.hpp; sourceTree = SOURCE_ROOT; };
+		F0FCB181083F4AE262BB8BF3 /* scoped_lock.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = scoped_lock.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/scoped_lock.hpp; sourceTree = SOURCE_ROOT; };
+		F18EAC0D0D1DA81634202D19 /* kqueue_reactor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = kqueue_reactor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/kqueue_reactor.hpp; sourceTree = SOURCE_ROOT; };
+		F1A688079D4F2BC17BFA5339 /* handler_cont_helpers.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = handler_cont_helpers.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/handler_cont_helpers.hpp; sourceTree = SOURCE_ROOT; };
+		F1D77453D88295BDAEA15DDA /* yield.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = yield.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/yield.hpp; sourceTree = SOURCE_ROOT; };
+		F21623CC8A1D26BAED3E0FA8 /* reactive_socket_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = reactive_socket_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/reactive_socket_service.hpp; sourceTree = SOURCE_ROOT; };
+		F3A48F9EFE2FD252A760608B /* win_iocp_handle_write_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = win_iocp_handle_write_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/win_iocp_handle_write_op.hpp; sourceTree = SOURCE_ROOT; };
+		F3C87E08D11544D840A84C0B /* associated_executor.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = associated_executor.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/associated_executor.hpp; sourceTree = SOURCE_ROOT; };
+		F471A9BB8FE294369CA14E36 /* package.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = package.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/package.hpp; sourceTree = SOURCE_ROOT; };
+		F47FEAEF38BF9BCD36C6B70A /* scheduler_thread_info.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = scheduler_thread_info.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/scheduler_thread_info.hpp; sourceTree = SOURCE_ROOT; };
+		F4F18F1C406773E3E9FD4D31 /* verify_mode.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = verify_mode.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl/verify_mode.hpp; sourceTree = SOURCE_ROOT; };
+		F60F9369EDEFD44399C82669 /* basic_seq_packet_socket.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = basic_seq_packet_socket.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/basic_seq_packet_socket.hpp; sourceTree = SOURCE_ROOT; };
+		F714C95DAB66DC6D1A923884 /* winrt_resolve_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = winrt_resolve_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/winrt_resolve_op.hpp; sourceTree = SOURCE_ROOT; };
+		F74949402BD3D21EEFBD8007 /* waitable_timer_service.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = waitable_timer_service.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/waitable_timer_service.hpp; sourceTree = SOURCE_ROOT; };
+		F7D5A1679DDA5DD43F0789D9 /* socket.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = socket.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ts/socket.hpp; sourceTree = SOURCE_ROOT; };
+		F806198A69142BDCBEC84251 /* address_v6_iterator.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = address_v6_iterator.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/address_v6_iterator.hpp; sourceTree = SOURCE_ROOT; };
+		F8BA6F2C42515BCE9BFF0B4C /* resolve_op.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = resolve_op.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/resolve_op.hpp; sourceTree = SOURCE_ROOT; };
+		F9FD7055545ABA66ADEC96BB /* buffers_iterator.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = buffers_iterator.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/buffers_iterator.hpp; sourceTree = SOURCE_ROOT; };
+		FA7A6D0B4DBDB2A35FAEF6D7 /* internet.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = internet.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ts/internet.hpp; sourceTree = SOURCE_ROOT; };
+		FABAC360151685732F1A5067 /* event.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = event.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/event.hpp; sourceTree = SOURCE_ROOT; };
+		FBE53A558264DC80D4EC28F6 /* address_v6_range.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = address_v6_range.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ip/address_v6_range.hpp; sourceTree = SOURCE_ROOT; };
+		FCED9EEE57F6CEE75F174CE9 /* stream.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = stream.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/ssl/stream.hpp; sourceTree = SOURCE_ROOT; };
+		FD2E25A9CA0E31C057CEA8BF /* async_result.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = async_result.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/async_result.hpp; sourceTree = SOURCE_ROOT; };
+		FDA6D123D70E62B32B17F921 /* io_context.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = io_context.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/impl/io_context.hpp; sourceTree = SOURCE_ROOT; };
+		FE6254BBCEE4FEF5A032AFE8 /* socket_ops.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = socket_ops.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/socket_ops.hpp; sourceTree = SOURCE_ROOT; };
+		FF2E8D655CAFD350028ECF08 /* eventfd_select_interrupter.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = eventfd_select_interrupter.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/eventfd_select_interrupter.hpp; sourceTree = SOURCE_ROOT; };
+		FF33802109AF3D6A65BBE39E /* push_options.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = push_options.hpp; path = ../../../addons/ofxAsio/libs/asio/include/asio/detail/push_options.hpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B69B590A3A1756003C02F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
+				01B8D2AE1C99AA3A007A9733 /* libturbojpeg.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E0A49D5BB23A9C703C2EBF9 /* ssl */ = {
+			isa = PBXGroup;
+			children = (
+				55F9A236F8C185B4CB28B215 /* context.hpp */,
+				70390CB88F2ABC1517A3979E /* context_base.hpp */,
+				DE1BDB0EE4314417F4A5E355 /* detail */,
+				05EFC55F02525E65A00C8FC5 /* error.hpp */,
+				26E438B689EAA42904E12604 /* impl */,
+				373B92213425D5E2A4F6DFAA /* rfc2818_verification.hpp */,
+				FCED9EEE57F6CEE75F174CE9 /* stream.hpp */,
+				78911C94E3F46D24921E9B94 /* stream_base.hpp */,
+				9A06147B49953276C2D3BE66 /* verify_context.hpp */,
+				F4F18F1C406773E3E9FD4D31 /* verify_mode.hpp */,
+			);
+			name = ssl;
+			sourceTree = "<group>";
+		};
+		10B40D4CEFB84ADD8EEDF419 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				181EBA662DFA75809A2A9D9E /* asio */,
+				46C2C0B6AB5EACB36663C39E /* asio.hpp */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		181EBA662DFA75809A2A9D9E /* asio */ = {
+			isa = PBXGroup;
+			children = (
+				6514BEDE85B64230D695D541 /* associated_allocator.hpp */,
+				F3C87E08D11544D840A84C0B /* associated_executor.hpp */,
+				FD2E25A9CA0E31C057CEA8BF /* async_result.hpp */,
+				ABE09A06FFE25B3E65F74C43 /* basic_datagram_socket.hpp */,
+				D5918DB991B106B3ABE9519F /* basic_deadline_timer.hpp */,
+				86B08C66D40CE69B66AF314C /* basic_io_object.hpp */,
+				2AAD2B6EF157CEF02D073B3B /* basic_raw_socket.hpp */,
+				F60F9369EDEFD44399C82669 /* basic_seq_packet_socket.hpp */,
+				4A13DF5529234F4C8E4BDB39 /* basic_serial_port.hpp */,
+				6A0D9CE3E11D0B33A8E7371B /* basic_signal_set.hpp */,
+				EAFCB5F48A4DF34D66A728D6 /* basic_socket.hpp */,
+				B56FF06E22AF8827040CE362 /* basic_socket_acceptor.hpp */,
+				708E19259C27D6FCF94A3444 /* basic_socket_iostream.hpp */,
+				244CBDD4A6226D6245D8547C /* basic_socket_streambuf.hpp */,
+				330D174DE319735B686EACD7 /* basic_stream_socket.hpp */,
+				4793A929FF869E5B1DA5C3BA /* basic_streambuf.hpp */,
+				CA8E3D1E66BBB49C594276AA /* basic_streambuf_fwd.hpp */,
+				8D56ED4BEDE94EF51249BF2B /* basic_waitable_timer.hpp */,
+				04448B9B3F63E58CE8754690 /* bind_executor.hpp */,
+				516111AB46027F89E5EED6B3 /* buffer.hpp */,
+				3F8EAF45B35D7E362A276D6C /* buffered_read_stream.hpp */,
+				AAB68480869393B375503906 /* buffered_read_stream_fwd.hpp */,
+				AA8013132F02BF405ACC3403 /* buffered_stream.hpp */,
+				11B7BC7D8C627F90CA6DB726 /* buffered_stream_fwd.hpp */,
+				06D73D87DDDACBE840CEE57A /* buffered_write_stream.hpp */,
+				660AC7B5CE4838F59E53104D /* buffered_write_stream_fwd.hpp */,
+				F9FD7055545ABA66ADEC96BB /* buffers_iterator.hpp */,
+				766EE214327A727BE35F48FC /* completion_condition.hpp */,
+				68213D0144638260B0565525 /* connect.hpp */,
+				6D1DA5AA0F788E77F81484BB /* coroutine.hpp */,
+				2E2721B88ED008C4BBD4CB89 /* datagram_socket_service.hpp */,
+				186F4EEFF342AA2A6D593847 /* deadline_timer.hpp */,
+				966A350BFA6B3E5D0DD6B00D /* deadline_timer_service.hpp */,
+				129D0E91D668F9F77E49ADF1 /* defer.hpp */,
+				27639858511307286A07A43E /* detail */,
+				4119A5AB3C3F7BF9F27D2960 /* dispatch.hpp */,
+				AEA1EB61F521951A7667A105 /* error.hpp */,
+				A68BC4CD986ADD06CA47EC76 /* error_code.hpp */,
+				1795CD2DE478BAFF7A275661 /* execution_context.hpp */,
+				A18605CFF41500CB6A3BAEB3 /* executor.hpp */,
+				817398611790BAF31D32FE62 /* executor_work_guard.hpp */,
+				521F42A7A6B616BDDF4A39FC /* generic */,
+				A80AF084C5EC9ABC91783337 /* handler_alloc_hook.hpp */,
+				C1FCB1637A6F092DA00D60D2 /* handler_continuation_hook.hpp */,
+				4711AF910997E62EC982E160 /* handler_invoke_hook.hpp */,
+				1419D301C5FFFA1109626EF9 /* handler_type.hpp */,
+				C7499A990D9A68CA36690E99 /* high_resolution_timer.hpp */,
+				E3D09C33406F5A219969BFC6 /* impl */,
+				B920EFBB975AF81E1A323723 /* io_context.hpp */,
+				546F1E9B0A6204EB0C186595 /* io_context_strand.hpp */,
+				0E7D77DA9E6B98D926F21085 /* io_service.hpp */,
+				E955657DB43E903F2343DF97 /* io_service_strand.hpp */,
+				65E1F8EA849E7B04DA1E8F34 /* ip */,
+				E2314C6928909C6FCD0888D9 /* is_executor.hpp */,
+				3D3004E2EF15B0ACE1E64F27 /* is_read_buffered.hpp */,
+				D9D6AEC296BE99134F958814 /* is_write_buffered.hpp */,
+				4EF14FCFA5C005479C5198B4 /* local */,
+				F471A9BB8FE294369CA14E36 /* package.hpp */,
+				8EC2D15CCA1155B94DD454A8 /* placeholders.hpp */,
+				34F34EFF4EB44DB300ED1C63 /* posix */,
+				B26D2C3DBD42B77664E67EC6 /* post.hpp */,
+				207D4A0A8C85A1B15E2E0DF1 /* raw_socket_service.hpp */,
+				1EBF96FCD761967F4235D3B4 /* read.hpp */,
+				015AAC90A05C28145720DF69 /* read_at.hpp */,
+				C469D692B55EADFA1A64B55E /* read_until.hpp */,
+				7D2A7EABC128A85C1606628D /* seq_packet_socket_service.hpp */,
+				7AADE185063393FFFDE83B26 /* serial_port.hpp */,
+				D665974205AB4C5BED5DE458 /* serial_port_base.hpp */,
+				A23850662B73135870F83A22 /* serial_port_service.hpp */,
+				03A85CB4C82ABF256AED3545 /* signal_set.hpp */,
+				E3728FB8D3B2E6CFCAB1C8CB /* signal_set_service.hpp */,
+				E4E02B90B6CE46D9CD2313F9 /* socket_acceptor_service.hpp */,
+				A84CE2BBB81B5E3F127C4591 /* socket_base.hpp */,
+				2EEDB892A869661A5A45F965 /* spawn.hpp */,
+				0E0A49D5BB23A9C703C2EBF9 /* ssl */,
+				886C42675AD59BFACF98FF74 /* ssl.hpp */,
+				4BA3FBFE83034078B38AAC05 /* steady_timer.hpp */,
+				8A9E5E731AD5252966C02193 /* strand.hpp */,
+				A684A0E332CB9CF1607886ED /* stream_socket_service.hpp */,
+				22D6613761B30B5116CC2E1A /* streambuf.hpp */,
+				8E6C9F86D76B5D5E7172AC5F /* system_error.hpp */,
+				DB66BB9B854E44C5F2C1F546 /* system_executor.hpp */,
+				0A83C3D64629B0306BB89A37 /* system_timer.hpp */,
+				D25220E85E895BD582C3F56E /* thread.hpp */,
+				89AF73EF0D5F51553C9265E3 /* thread_pool.hpp */,
+				609AABBA757DAC6A341619EC /* time_traits.hpp */,
+				F1FDC070DE95C6CC0F7B3AA9 /* ts */,
+				67D50DF306535EBD93D2ECDD /* unyield.hpp */,
+				1ABE92943D928B14E9A24194 /* use_future.hpp */,
+				692D81ACFC6C4757EEE6FED6 /* uses_executor.hpp */,
+				0656785FA12E12192CF98829 /* version.hpp */,
+				EF5FFC08FE62C982E4F34800 /* wait_traits.hpp */,
+				F74949402BD3D21EEFBD8007 /* waitable_timer_service.hpp */,
+				879F7C281EC0CF17445DE90F /* windows */,
+				28BC8CDAF9525C338B5D5603 /* write.hpp */,
+				854359C3DDEC1C7972E22936 /* write_at.hpp */,
+				F1D77453D88295BDAEA15DDA /* yield.hpp */,
+			);
+			name = asio;
+			sourceTree = "<group>";
+		};
+		20B0E64E83E2B60DBCF1B934 /* UDP */ = {
+			isa = PBXGroup;
+			children = (
+				760C2F05F2B8C90732701AA3 /* Client.h */,
+				120F006E6911C9F18AA50323 /* DataGram.cpp */,
+				74BD1EE92FB2C73A892C53EF /* DataGram.h */,
+				4656EAFE338D106AD171DCC2 /* EndPoint.cpp */,
+				AAFEE42632B79ED5306B1595 /* EndPoint.h */,
+				562F112B38ADE0111BEACAA5 /* Server.h */,
+				4CF9DA35D8D6B0724D17B91D /* Socket.cpp */,
+				13E55B9F08AA523B8999A9B0 /* Socket.h */,
+			);
+			name = UDP;
+			sourceTree = "<group>";
+		};
+		26E438B689EAA42904E12604 /* impl */ = {
+			isa = PBXGroup;
+			children = (
+				E132CBEF2AC272114A204891 /* context.hpp */,
+				7A25CBD0120B33298D0E660D /* src.hpp */,
+			);
+			name = impl;
+			sourceTree = "<group>";
+		};
+		27639858511307286A07A43E /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				4F1D6EA84976A4901E2E07D2 /* array.hpp */,
+				AD66CA5A1A718998A1F59DDA /* array_fwd.hpp */,
+				C2C279534DCCAA0DA5BB6AC4 /* assert.hpp */,
+				6E76E98712C629D339FEB13C /* atomic_count.hpp */,
+				BCAB0FB4288ADACFCD37FDFB /* base_from_completion_cond.hpp */,
+				673EEDDDD6B78AEAD0E1064C /* bind_handler.hpp */,
+				EB2A7627E8D016117F2814CB /* buffer_resize_guard.hpp */,
+				D442EC917A292A368CE3D23E /* buffer_sequence_adapter.hpp */,
+				686BABAF003B92D19C70E537 /* buffered_stream_storage.hpp */,
+				B76993A2901AE7E7C217F7F3 /* call_stack.hpp */,
+				0F251833AD88CF614859D2B7 /* chrono.hpp */,
+				9B63C724C3601A5051A3417C /* chrono_time_traits.hpp */,
+				1B135FE87C5DF447E23E80A7 /* completion_handler.hpp */,
+				43AA1899BADF130CD40FE74C /* config.hpp */,
+				ED6268E7A0A1C3A3F38E7B1E /* consuming_buffers.hpp */,
+				8337FBF099F67A40E8A8D459 /* cstddef.hpp */,
+				17F446FF38F0891A7A24FEB4 /* cstdint.hpp */,
+				8A9ADA4BDBE8734DD165AA93 /* date_time_fwd.hpp */,
+				1236762772F76B077A02A7A3 /* deadline_timer_service.hpp */,
+				BCC5C751ED118AE633E2E272 /* dependent_type.hpp */,
+				783DCF9FB5D44DCB6D606F91 /* descriptor_ops.hpp */,
+				54DBEF9E8918B4DDC264101A /* descriptor_read_op.hpp */,
+				E2FB48C1D44D6EAC465F0889 /* descriptor_write_op.hpp */,
+				6228C8A75BA71AC3126B49B8 /* dev_poll_reactor.hpp */,
+				81E9B5A95BDA7C9B3634ABE3 /* epoll_reactor.hpp */,
+				FABAC360151685732F1A5067 /* event.hpp */,
+				FF2E8D655CAFD350028ECF08 /* eventfd_select_interrupter.hpp */,
+				913C642C461C7F104A8303D4 /* executor_op.hpp */,
+				ADD79B5A9E576AA9B95EE1F5 /* fd_set_adapter.hpp */,
+				7C87A94363D4B55B0536EA52 /* fenced_block.hpp */,
+				254ED23704E269E99583C74D /* functional.hpp */,
+				CADC2046EE76A645E7BD9B51 /* gcc_arm_fenced_block.hpp */,
+				2CEBB253E463B1E488F559E5 /* gcc_hppa_fenced_block.hpp */,
+				8374CAD7B392061E13A03C98 /* gcc_sync_fenced_block.hpp */,
+				1A43F70DE23B8946AF86B296 /* gcc_x86_fenced_block.hpp */,
+				AA588B0C8B387C7A188AEF0E /* global.hpp */,
+				8B17D8DE7262C736E9875184 /* handler_alloc_helpers.hpp */,
+				F1A688079D4F2BC17BFA5339 /* handler_cont_helpers.hpp */,
+				868DA64B2F20396AB94BB146 /* handler_invoke_helpers.hpp */,
+				6FCB7261CF4B4C14C8DEEB5A /* handler_tracking.hpp */,
+				B15353EEAF49156F82D6295D /* handler_type_requirements.hpp */,
+				448975FC64CF501E11788970 /* handler_work.hpp */,
+				5925E71BE400677F6F404D2D /* hash_map.hpp */,
+				8F3D3B9A106080B24C8D915E /* impl */,
+				9852937BE5925F152249550F /* io_control.hpp */,
+				59C015D9601636D84A54A0FB /* is_buffer_sequence.hpp */,
+				CB5FDC71DB9888CF3516C66D /* keyword_tss_ptr.hpp */,
+				F18EAC0D0D1DA81634202D19 /* kqueue_reactor.hpp */,
+				06EF65928EF73F0F1247DC67 /* limits.hpp */,
+				A04A5A633FDE3DD578D893B0 /* local_free_on_block_exit.hpp */,
+				280384539D54FE6A837FB844 /* macos_fenced_block.hpp */,
+				0CA222C2E3FD056FC05805CC /* memory.hpp */,
+				A3DE0C6EB501FFD459E93CFA /* mutex.hpp */,
+				AE489D136EF14939A709A7BB /* noncopyable.hpp */,
+				60AC0965C365C345FA66C302 /* null_event.hpp */,
+				83EEC635FC9C4792961C8832 /* null_fenced_block.hpp */,
+				604DDBEEFF677763AE60C301 /* null_global.hpp */,
+				4587D11D9AE323653F0AE092 /* null_mutex.hpp */,
+				8660C1161920173349A5C47F /* null_reactor.hpp */,
+				C86B00919A9652ACBA23762B /* null_signal_blocker.hpp */,
+				540CED893A6638D25F2F96CB /* null_socket_service.hpp */,
+				AA5A2F2A8514AE8C836C4E18 /* null_static_mutex.hpp */,
+				89BB1D49B71C62EAD98669D6 /* null_thread.hpp */,
+				A30ABEBC1859F9065EE29B28 /* null_tss_ptr.hpp */,
+				B6CA5EBBDD946905CDF23887 /* object_pool.hpp */,
+				3638F15DF36EABF891586F47 /* old_win_sdk_compat.hpp */,
+				2860CE471DCF3E90F2454D3D /* op_queue.hpp */,
+				5E30DCCA8983CD1691DCDEB0 /* operation.hpp */,
+				DE0D92E0464C7773B79CFE57 /* pipe_select_interrupter.hpp */,
+				9E18D4927032A63DCD97B27F /* pop_options.hpp */,
+				8A8A2472B8167E64CB34A300 /* posix_event.hpp */,
+				3A78055C652B81D3E0827846 /* posix_fd_set_adapter.hpp */,
+				0E5244CAFBD6FBB15B3887F3 /* posix_global.hpp */,
+				8B3C13251FBB568BFD0EB89B /* posix_mutex.hpp */,
+				E5EF0FA01CF4B985F0A96EFC /* posix_signal_blocker.hpp */,
+				91FD0DEF2FA2657921454A85 /* posix_static_mutex.hpp */,
+				1E0A6C32A811730723B8F17A /* posix_thread.hpp */,
+				A74DED40264C6BD3AC626D06 /* posix_tss_ptr.hpp */,
+				FF33802109AF3D6A65BBE39E /* push_options.hpp */,
+				E297BCDD2926B1ABFD92AC3A /* reactive_descriptor_service.hpp */,
+				76A883B09C03FA56D4FBAB46 /* reactive_null_buffers_op.hpp */,
+				7555623871227C73BF52F47F /* reactive_serial_port_service.hpp */,
+				A4565E6C9AA93CCF77480607 /* reactive_socket_accept_op.hpp */,
+				513DD7DEAEC4DA31F2979442 /* reactive_socket_connect_op.hpp */,
+				67FF6238E85A26A572B0896C /* reactive_socket_recv_op.hpp */,
+				B19477E68185B2A5CAD3544E /* reactive_socket_recvfrom_op.hpp */,
+				B8BB7E317197D72231BA1303 /* reactive_socket_recvmsg_op.hpp */,
+				7B3160D888EC4F15C1B16B48 /* reactive_socket_send_op.hpp */,
+				5F52438BCEFA6F6EFD331611 /* reactive_socket_sendto_op.hpp */,
+				F21623CC8A1D26BAED3E0FA8 /* reactive_socket_service.hpp */,
+				CA77F184390483BCABB30959 /* reactive_socket_service_base.hpp */,
+				8CCEE3666BB53CA4560D9F1D /* reactive_wait_op.hpp */,
+				5133791924F48EECE345A826 /* reactor.hpp */,
+				1AF6863FD94071ED2FF54022 /* reactor_fwd.hpp */,
+				EBAB939CCD955D1CDCFE4CDE /* reactor_op.hpp */,
+				09807EAC39F23495B54FCDD0 /* reactor_op_queue.hpp */,
+				21B36F30B88235D494623CF8 /* recycling_allocator.hpp */,
+				34C1C2195FA74A9BF43A8A40 /* regex_fwd.hpp */,
+				2D13D97A604D3643AE1AC879 /* resolve_endpoint_op.hpp */,
+				F8BA6F2C42515BCE9BFF0B4C /* resolve_op.hpp */,
+				710767902AFAAE2AFCE45A7C /* resolver_service.hpp */,
+				6930DE88EE24C94594FF5700 /* resolver_service_base.hpp */,
+				9BA02418C612FE2C9EC1F426 /* scheduler.hpp */,
+				3A59FFEFB0D655B8ECA42E22 /* scheduler_operation.hpp */,
+				F47FEAEF38BF9BCD36C6B70A /* scheduler_thread_info.hpp */,
+				F0FCB181083F4AE262BB8BF3 /* scoped_lock.hpp */,
+				DA32245F47B248F30CB039AF /* scoped_ptr.hpp */,
+				0F2022218625B82DFC28C933 /* select_interrupter.hpp */,
+				1FFC9EFBD0EA48EBA05348B7 /* select_reactor.hpp */,
+				9C59F9D145EBD3A2274EAC0B /* service_registry.hpp */,
+				A5C3D9EC0007A906F9394C3E /* signal_blocker.hpp */,
+				E626DC73779AE97B399C6B43 /* signal_handler.hpp */,
+				0226C2077EFF1C9027BBD89B /* signal_init.hpp */,
+				C2A77D438282CB199C7AD4A1 /* signal_op.hpp */,
+				DD04DBE6F9B07AC010983AF7 /* signal_set_service.hpp */,
+				EB80C171EC0D2D09D145C1B9 /* socket_holder.hpp */,
+				FE6254BBCEE4FEF5A032AFE8 /* socket_ops.hpp */,
+				0C3D86119BEE0A1734AF3A32 /* socket_option.hpp */,
+				4C28C57C8972399F89B44E47 /* socket_select_interrupter.hpp */,
+				CD3D87815DD57F5B8C7311C7 /* socket_types.hpp */,
+				A48124A415F76B353B318C21 /* solaris_fenced_block.hpp */,
+				9BD1B74CAB39DF7D09FCD7B8 /* static_mutex.hpp */,
+				038BDC6DF37D7F52955E35EC /* std_event.hpp */,
+				066F372C2C39AFE52FD1C6B3 /* std_global.hpp */,
+				546F7DCBE477E587DC04F9F4 /* std_mutex.hpp */,
+				15E6052C489EB73E957E899B /* std_static_mutex.hpp */,
+				28978AA7A1E1BDEE9CE97723 /* std_thread.hpp */,
+				6F9E5DB471695B5EBEDD40FD /* strand_executor_service.hpp */,
+				277C6A0148F6B1CB42E1BB35 /* strand_service.hpp */,
+				7F6A0BA91FD9902A25ACF34D /* thread.hpp */,
+				AA21F29D36A9F07930064646 /* thread_context.hpp */,
+				EC7D8F7DFAE0B55C89AAD3E4 /* thread_group.hpp */,
+				EAA2C9AED1885CCFC6DF00A9 /* thread_info_base.hpp */,
+				4C9E2FC2A47070D935B3BFB2 /* throw_error.hpp */,
+				95AC34401B5F678224578DDF /* throw_exception.hpp */,
+				62CCF123338EA2A77E9CE296 /* timer_queue.hpp */,
+				D287F556ED4019A950743018 /* timer_queue_base.hpp */,
+				D01CA9B58D95A69160544612 /* timer_queue_ptime.hpp */,
+				BF03657F65B8E42ADDE811F9 /* timer_queue_set.hpp */,
+				AA3293C40A6FB10110E565FC /* timer_scheduler.hpp */,
+				358A074E845644D9EFF818A3 /* timer_scheduler_fwd.hpp */,
+				89EC26311E487F9B8FD7A457 /* tss_ptr.hpp */,
+				40A959C869AF2DB4BA29A469 /* type_traits.hpp */,
+				0B3FECA72CB53915CF8ABE8C /* variadic_templates.hpp */,
+				E027E1D69A449AD6563B9D53 /* wait_handler.hpp */,
+				0F6E180B591783F6DACFE0E8 /* wait_op.hpp */,
+				34435E8C3BEAB3D21BCE45AC /* win_event.hpp */,
+				2ADFEC2CC093760ECA6EA289 /* win_fd_set_adapter.hpp */,
+				CED1DA3AB9F37C6A1CEA6B54 /* win_fenced_block.hpp */,
+				7EAEF64BFEFBE58037CD8E22 /* win_global.hpp */,
+				BDF7F71C96B6455A72BFBE18 /* win_iocp_handle_read_op.hpp */,
+				3B5FCCD37112FD41D3593F39 /* win_iocp_handle_service.hpp */,
+				F3A48F9EFE2FD252A760608B /* win_iocp_handle_write_op.hpp */,
+				08C38444CEF9D3F77E000A0A /* win_iocp_io_context.hpp */,
+				2FBB871958A373D8C13B66E2 /* win_iocp_null_buffers_op.hpp */,
+				2E2BB018C2AFB373C190F9A6 /* win_iocp_operation.hpp */,
+				A001AA58F303F8DECF5CD66B /* win_iocp_overlapped_op.hpp */,
+				7092ABFFBA314BB735A29F50 /* win_iocp_overlapped_ptr.hpp */,
+				7C50F9BF76DC955E1F6ECC6B /* win_iocp_serial_port_service.hpp */,
+				1AE46CBF7C5B12A6AFBADB9F /* win_iocp_socket_accept_op.hpp */,
+				36D4D15822F33E5D0695B99C /* win_iocp_socket_connect_op.hpp */,
+				5A06B3BF7AEF50DF8FFF57AA /* win_iocp_socket_recv_op.hpp */,
+				B687AA843E595EA6C591EAC0 /* win_iocp_socket_recvfrom_op.hpp */,
+				58471528289886BF3A17AD91 /* win_iocp_socket_recvmsg_op.hpp */,
+				C3052431E9B86ACB52D6674D /* win_iocp_socket_send_op.hpp */,
+				BD1FDF9EF341741ABCFFD6D5 /* win_iocp_socket_service.hpp */,
+				27C817FD256C997B3A559BF3 /* win_iocp_socket_service_base.hpp */,
+				EB7F4824E75C010BF1545CB0 /* win_iocp_thread_info.hpp */,
+				7360375BF95E9932C80F1E02 /* win_iocp_wait_op.hpp */,
+				6AB7778E2473A6F8D3BF8409 /* win_mutex.hpp */,
+				411824B05B96233C326A8C02 /* win_object_handle_service.hpp */,
+				9ADCD13E05775EA78D0B05BE /* win_static_mutex.hpp */,
+				E987F830CD403E17D4F71FE7 /* win_thread.hpp */,
+				C570A07960A56EB2723C8889 /* win_tss_ptr.hpp */,
+				20AD6BB462DA8A1C28F22EE4 /* winapp_thread.hpp */,
+				1100BF30B97058C17432C027 /* wince_thread.hpp */,
+				624F3CE754B52DF29B36E5AB /* winrt_async_manager.hpp */,
+				0CB119E1BEDF7FFB88065E2A /* winrt_async_op.hpp */,
+				F714C95DAB66DC6D1A923884 /* winrt_resolve_op.hpp */,
+				5509AF85DEAE157A752895C6 /* winrt_resolver_service.hpp */,
+				616C2549666DDF2F3C055CDB /* winrt_socket_connect_op.hpp */,
+				E1EEFE46968F2C043C059657 /* winrt_socket_recv_op.hpp */,
+				9BEA906CA719D4D31AAC63F2 /* winrt_socket_send_op.hpp */,
+				6585677D8280D474768001A0 /* winrt_ssocket_service.hpp */,
+				DA43E9BC068784AD40BF213C /* winrt_ssocket_service_base.hpp */,
+				28E9519BAB9C204547A41653 /* winrt_timer_scheduler.hpp */,
+				0DCA227A6FCBE2C6FFA8FD50 /* winrt_utils.hpp */,
+				95F087FAA12134D5A2F61C73 /* winsock_init.hpp */,
+				821608D256CA4B05AE15909C /* work_dispatcher.hpp */,
+				60E9E0F01EC9766120DE2538 /* wrapped_handler.hpp */,
+			);
+			name = detail;
+			sourceTree = "<group>";
+		};
+		29507F94FC17E77F52D317B9 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8D69533A53ED061E713EAF84 /* ofxTurboJpeg.h */,
+				CC7594CA5E21F32F237CA87E /* ofxTurboJpeg.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		334E8B760835B4E270BF0E5C /* ofxTurboJpeg */ = {
+			isa = PBXGroup;
+			children = (
+				01B8D2AD1C99AA3A007A9733 /* libturbojpeg.dylib */,
+				29507F94FC17E77F52D317B9 /* src */,
+			);
+			name = ofxTurboJpeg;
+			sourceTree = "<group>";
+		};
+		34F34EFF4EB44DB300ED1C63 /* posix */ = {
+			isa = PBXGroup;
+			children = (
+				1F6949752BBD55F30089BD46 /* basic_descriptor.hpp */,
+				819BD7E4B313BECF27D9E403 /* basic_stream_descriptor.hpp */,
+				B81FA654CF78BCD3764F7B2D /* descriptor_base.hpp */,
+				71E91C69D5EE76B07E5391B7 /* stream_descriptor.hpp */,
+				D4A8A980F53AF8C902DD57F3 /* stream_descriptor_service.hpp */,
+			);
+			name = posix;
+			sourceTree = "<group>";
+		};
+		4809F1E4629FDB80ECEC8046 /* asio */ = {
+			isa = PBXGroup;
+			children = (
+				10B40D4CEFB84ADD8EEDF419 /* include */,
+			);
+			name = asio;
+			sourceTree = "<group>";
+		};
+		4EBB19B77F144B854B420B38 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				3AF8CA16131A88667DB9027A /* endpoint.hpp */,
+				888308B79411450AE61D158F /* socket_option.hpp */,
+			);
+			name = detail;
+			sourceTree = "<group>";
+		};
+		4EF14FCFA5C005479C5198B4 /* local */ = {
+			isa = PBXGroup;
+			children = (
+				7A9DCADA7744BC2CDDC56C97 /* basic_endpoint.hpp */,
+				EAB9BB32ED81B9A6CC3E19DC /* connect_pair.hpp */,
+				6E803D48EDD3D39DE4A57E08 /* datagram_protocol.hpp */,
+				5777BF893D402ED8E66E7254 /* detail */,
+				E7EE113F792324B72F5067AF /* stream_protocol.hpp */,
+			);
+			name = local;
+			sourceTree = "<group>";
+		};
+		521F42A7A6B616BDDF4A39FC /* generic */ = {
+			isa = PBXGroup;
+			children = (
+				19B2A0F055BEDBCF62A77B82 /* basic_endpoint.hpp */,
+				B179B26E9A23003199AD3B75 /* datagram_protocol.hpp */,
+				F86A1FB78B6C3E0BF05C724D /* detail */,
+				844F1D5549229C6A40742296 /* raw_protocol.hpp */,
+				6439976B7926812B7EEABA1B /* seq_packet_protocol.hpp */,
+				11C56B23747DFBB1291277BA /* stream_protocol.hpp */,
+			);
+			name = generic;
+			sourceTree = "<group>";
+		};
+		5777BF893D402ED8E66E7254 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				D71EFEA780758D007AEE09C3 /* endpoint.hpp */,
+			);
+			name = detail;
+			sourceTree = "<group>";
+		};
+		65E1F8EA849E7B04DA1E8F34 /* ip */ = {
+			isa = PBXGroup;
+			children = (
+				43E179D576D6B7E0A4E9593D /* address.hpp */,
+				8D02DE8F32CC92A47D1CDC14 /* address_v4.hpp */,
+				32DD001B8BBD33C6F99930D9 /* address_v4_iterator.hpp */,
+				7E8F8FDB88E82C7B94D2D216 /* address_v4_range.hpp */,
+				CD68C8911D222C602E9C1600 /* address_v6.hpp */,
+				F806198A69142BDCBEC84251 /* address_v6_iterator.hpp */,
+				FBE53A558264DC80D4EC28F6 /* address_v6_range.hpp */,
+				2E6F7C74BE5F9CC9FC10E099 /* bad_address_cast.hpp */,
+				9F21F5270D68B0ACD052D9CE /* basic_endpoint.hpp */,
+				96448D900A8D5610E8A20133 /* basic_resolver.hpp */,
+				DE3DB7C34E0494749B2B6274 /* basic_resolver_entry.hpp */,
+				C8297FCBC00B05A5D9CDE89B /* basic_resolver_iterator.hpp */,
+				2EB40BDDFFB81E25BACF1514 /* basic_resolver_query.hpp */,
+				74006C642A67640963D88C98 /* basic_resolver_results.hpp */,
+				4EBB19B77F144B854B420B38 /* detail */,
+				09BCF932422C0CD9BD1A6AC9 /* host_name.hpp */,
+				0EFB41D42BB491A72A1BD298 /* icmp.hpp */,
+				BB6253CA0DA64596720D4CC9 /* impl */,
+				5B55C8EC1986E9F834A184EC /* multicast.hpp */,
+				1FCCB2B83060A0F0DD7D3327 /* network_v4.hpp */,
+				0F546A09B6923C1AFDE770D7 /* network_v6.hpp */,
+				0605DDDDEBABEC0B940D85D3 /* resolver_base.hpp */,
+				3403D5E6086298AFA294E8D0 /* resolver_query_base.hpp */,
+				F091467166E9EF44E2362144 /* resolver_service.hpp */,
+				078BDF2690C17AF0A9C6A26F /* tcp.hpp */,
+				2DD4151161396194B1679F8F /* udp.hpp */,
+				32060CF40A8CF9C69BD03848 /* unicast.hpp */,
+				97B42900A1743036AA4AAA96 /* v6_only.hpp */,
+			);
+			name = ip;
+			sourceTree = "<group>";
+		};
+		6948EE371B920CB800B5AC1A /* local_addons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = local_addons;
+			sourceTree = "<group>";
+		};
+		879F7C281EC0CF17445DE90F /* windows */ = {
+			isa = PBXGroup;
+			children = (
+				6E7EFE8F978C10E030A4294B /* basic_handle.hpp */,
+				AA67771D2C5ECE1544B86D6C /* basic_object_handle.hpp */,
+				A42AED13264695B1B68FA860 /* basic_random_access_handle.hpp */,
+				8FC17C3EEC42DCD2F445C734 /* basic_stream_handle.hpp */,
+				E4524751A76BAE65CE18D112 /* object_handle.hpp */,
+				A1CBFFB561734DA1A2436B95 /* object_handle_service.hpp */,
+				04A1019B84D2BD24E6554631 /* overlapped_ptr.hpp */,
+				72356174603F6A00AD568AB2 /* random_access_handle.hpp */,
+				E436195E59FBEE3F89631994 /* random_access_handle_service.hpp */,
+				E332A8F4F6BEE7502A39B24F /* stream_handle.hpp */,
+				271B318A71CD365CCBDB4E4B /* stream_handle_service.hpp */,
+			);
+			name = windows;
+			sourceTree = "<group>";
+		};
+		8F3D3B9A106080B24C8D915E /* impl */ = {
+			isa = PBXGroup;
+			children = (
+				9FB6AB9FBCBE40C353223464 /* dev_poll_reactor.hpp */,
+				43C8437A542DBFEF85BDEE9D /* epoll_reactor.hpp */,
+				D9163C90699EF897E0A80B2C /* kqueue_reactor.hpp */,
+				0CB0F86886356A2FA142EAF8 /* select_reactor.hpp */,
+				AA78DDDBF0C134F06737A41A /* service_registry.hpp */,
+				3499CEFD3E7E978ECFE64B24 /* strand_executor_service.hpp */,
+				897DFAAE7C5F114979334AB4 /* strand_service.hpp */,
+				0F986797D22D01BA049F6673 /* win_iocp_io_context.hpp */,
+				55479C49B3DAB29CAADE2753 /* winrt_timer_scheduler.hpp */,
+			);
+			name = impl;
+			sourceTree = "<group>";
+		};
+		96CE46AF7A0BFF663386ACBB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E36D0519E3B29E3056753DC0 /* ofxAsio */,
+				253D79708EAB8F568E1F38E1 /* ofxAsio.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		A2EFF64B7CB6133D7438084E /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				4809F1E4629FDB80ECEC8046 /* asio */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		BB4B014C10F69532006C3DED /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				C4D91E434FE6C86997937628 /* ofxAsio */,
+				334E8B760835B4E270BF0E5C /* ofxTurboJpeg */,
+			);
+			name = addons;
+			sourceTree = "<group>";
+		};
+		BB6253CA0DA64596720D4CC9 /* impl */ = {
+			isa = PBXGroup;
+			children = (
+				6A2BC29B105FECC1EB0AE883 /* address.hpp */,
+				9F0697DADC8F21469BE45E6E /* address_v4.hpp */,
+				51F94C8BB641C5AC8CDFFB78 /* address_v6.hpp */,
+				6A33C938B9ACD14AFA5EC14F /* basic_endpoint.hpp */,
+				BECE999338BAE6EDE52F52DC /* network_v4.hpp */,
+				2A53AC08906F1810286DCB77 /* network_v6.hpp */,
+			);
+			name = impl;
+			sourceTree = "<group>";
+		};
+		C4D91E434FE6C86997937628 /* ofxAsio */ = {
+			isa = PBXGroup;
+			children = (
+				96CE46AF7A0BFF663386ACBB /* src */,
+				A2EFF64B7CB6133D7438084E /* libs */,
+			);
+			name = ofxAsio;
+			sourceTree = "<group>";
+		};
+		DE1BDB0EE4314417F4A5E355 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				B1A21E6986AF8647FE690FA2 /* buffered_handshake_op.hpp */,
+				6F657AAD92A670ABE4590DB7 /* engine.hpp */,
+				7C18456BACB11EF33EB811F0 /* handshake_op.hpp */,
+				AF41BAC1A9BDDD8E1E7F1E61 /* io.hpp */,
+				02FDE4EE5E4031A3DC5040D8 /* openssl_init.hpp */,
+				C960392CD8B223214ADF1EE3 /* openssl_types.hpp */,
+				69D19A4577625102E471E443 /* password_callback.hpp */,
+				69D56260343E8B68B1DF46AE /* read_op.hpp */,
+				6FC64AA207B8F6F87216A689 /* shutdown_op.hpp */,
+				53CC63265FF97DF4E9FDCEC9 /* stream_core.hpp */,
+				3A46962FE133F68EA17DE124 /* verify_callback.hpp */,
+				DF5542C68EB2C36D6A295279 /* write_op.hpp */,
+			);
+			name = detail;
+			sourceTree = "<group>";
+		};
+		E36D0519E3B29E3056753DC0 /* ofxAsio */ = {
+			isa = PBXGroup;
+			children = (
+				89136E4AAF57FE586B1AB7D8 /* Includes.h */,
+				20B0E64E83E2B60DBCF1B934 /* UDP */,
+			);
+			name = ofxAsio;
+			sourceTree = "<group>";
+		};
+		E3D09C33406F5A219969BFC6 /* impl */ = {
+			isa = PBXGroup;
+			children = (
+				5E9B6B43A33D82637D68C18F /* buffered_read_stream.hpp */,
+				B02433289588D12CA4B351E0 /* buffered_write_stream.hpp */,
+				B2F2D35B17ED43214C329BA3 /* connect.hpp */,
+				77C59BB24929F373EFA004F6 /* defer.hpp */,
+				DA2A96841464C39E35174989 /* dispatch.hpp */,
+				9383B5262D5753FFC01BA6DA /* execution_context.hpp */,
+				1F60D3E64E41DEC74F8B4AD0 /* executor.hpp */,
+				FDA6D123D70E62B32B17F921 /* io_context.hpp */,
+				7B1F394B812702BB12FEBFAC /* post.hpp */,
+				D8CEDB94615BD1095077D730 /* read.hpp */,
+				13194E93ABF13663E66D7DD6 /* read_at.hpp */,
+				A4BB492CF1CB647C6ED327EC /* read_until.hpp */,
+				4F014F27E939089B8D5DB5E9 /* serial_port_base.hpp */,
+				CC996814A2C6DBA33C153612 /* spawn.hpp */,
+				2DE73A159CA1D5D09F613F34 /* system_executor.hpp */,
+				CFECEA100F4520307FCEB4C2 /* thread_pool.hpp */,
+				4B682F722E2628289326ABF7 /* use_future.hpp */,
+				BD42A869872CD103A5144E92 /* write.hpp */,
+				AB1C35F723D6CA01F1C6E86B /* write_at.hpp */,
+			);
+			name = impl;
+			sourceTree = "<group>";
+		};
+		E4328144138ABC890047C5CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4B69B4A0A3A1720003C02F2 = {
+			isa = PBXGroup;
+			children = (
+				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
+				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
+				E4B69E1C0A3A1BDC003C02F2 /* src */,
+				E4EEC9E9138DF44700A80321 /* openFrameworks */,
+				BB4B014C10F69532006C3DED /* addons */,
+				6948EE371B920CB800B5AC1A /* local_addons */,
+				E4B69B5B0A3A1756003C02F2 /* jpeg_streamDebug.app */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+				01B4E50A1C98C3510059F505 /* Server.h */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4EEC9E9138DF44700A80321 /* openFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */,
+				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
+			);
+			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+		F1FDC070DE95C6CC0F7B3AA9 /* ts */ = {
+			isa = PBXGroup;
+			children = (
+				6E3FF290E23AEC6C3F1BA962 /* buffer.hpp */,
+				DF1575AE757A9C7B78B1C0C4 /* executor.hpp */,
+				FA7A6D0B4DBDB2A35FAEF6D7 /* internet.hpp */,
+				6BB81202AC794E310F778358 /* io_context.hpp */,
+				E28F780BC09483ED2B97BADE /* networking.hpp */,
+				F7D5A1679DDA5DD43F0789D9 /* socket.hpp */,
+				710B312C1C9C62DE9CAF1001 /* thread_pool.hpp */,
+				E58BC592B46A730772A6B324 /* timer.hpp */,
+			);
+			name = ts;
+			sourceTree = "<group>";
+		};
+		F86A1FB78B6C3E0BF05C724D /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				396F467D4A296A0D9EB0C659 /* endpoint.hpp */,
+			);
+			name = detail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B69B5A0A3A1756003C02F2 /* jpeg_stream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "jpeg_stream" */;
+			buildPhases = (
+				E4B69B580A3A1756003C02F2 /* Sources */,
+				E4B69B590A3A1756003C02F2 /* Frameworks */,
+				E4B6FFFD0C3F9AB9008CF71C /* ShellScript */,
+				E4C2427710CC5ABF004149E2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
+			);
+			name = jpeg_stream;
+			productName = myOFApp;
+			productReference = E4B69B5B0A3A1756003C02F2 /* jpeg_streamDebug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "jpeg_stream" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = E4B69B4A0A3A1720003C02F2;
+			productRefGroup = E4B69B4A0A3A1720003C02F2;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E4328144138ABC890047C5CB /* Products */;
+					ProjectRef = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E4B69B5A0A3A1756003C02F2 /* jpeg_stream */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = openFrameworksDebug.a;
+			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4B6FFFD0C3F9AB9008CF71C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy default icon file into App/Resources\nrsync -aved \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy libfmod and change install directory for fmod to run\nrsync -aved ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\";\ninstall_name_tool -change @executable_path/libfmodex.dylib @executable_path/../Frameworks/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\n# Copy GLUT framework (must remove for AppStore submissions)\nrsync -aved ../../../libs/glut/lib/osx/GLUT.framework \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B69B580A3A1756003C02F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				DF2C2E8EF66E394D0F1A2174 /* DataGram.cpp in Sources */,
+				ECD90E10F2A7E5A26DA1AFFC /* EndPoint.cpp in Sources */,
+				3E5B1D1712E951B75D49D57E /* Socket.cpp in Sources */,
+				34A1CD0B670B0A4266464779 /* ofxTurboJpeg.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4EEB9AC138B136A00A80321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = openFrameworks;
+			targetProxy = E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+					../../../addons/ofxAsio/libs,
+					../../../addons/ofxAsio/libs/asio,
+					../../../addons/ofxAsio/libs/asio/include,
+					../../../addons/ofxAsio/libs/asio/include/asio,
+					../../../addons/ofxAsio/libs/asio/include/asio/detail,
+					../../../addons/ofxAsio/libs/asio/include/asio/detail/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/generic,
+					../../../addons/ofxAsio/libs/asio/include/asio/generic/detail,
+					../../../addons/ofxAsio/libs/asio/include/asio/generic/detail/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/ip,
+					../../../addons/ofxAsio/libs/asio/include/asio/ip/detail,
+					../../../addons/ofxAsio/libs/asio/include/asio/ip/detail/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/ip/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/local,
+					../../../addons/ofxAsio/libs/asio/include/asio/local/detail,
+					../../../addons/ofxAsio/libs/asio/include/asio/local/detail/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/posix,
+					../../../addons/ofxAsio/libs/asio/include/asio/ssl,
+					../../../addons/ofxAsio/libs/asio/include/asio/ssl/detail,
+					../../../addons/ofxAsio/libs/asio/include/asio/ssl/detail/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/ssl/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/ts,
+					../../../addons/ofxAsio/libs/asio/include/asio/windows,
+					../../../addons/ofxAsio/src,
+					../../../addons/ofxAsio/src/ofxAsio,
+					../../../addons/ofxAsio/src/ofxAsio/UDP,
+					../../../addons/ofxTurboJpeg/src/,
+					"../../../addons/ofxTurboJpeg/libs/turbo-jpeg/include",
+					../libs,
+					../libs/websocketpp,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(OF_CORE_LIBS)",
+					"../../../addons/ofxTurboJpeg/libs/turbo-jpeg/lib/osx/libturbojpeg.dylib",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E4B69B4F0A3A1720003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+					../../../addons/ofxAsio/libs,
+					../../../addons/ofxAsio/libs/asio,
+					../../../addons/ofxAsio/libs/asio/include,
+					../../../addons/ofxAsio/libs/asio/include/asio,
+					../../../addons/ofxAsio/libs/asio/include/asio/detail,
+					../../../addons/ofxAsio/libs/asio/include/asio/detail/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/generic,
+					../../../addons/ofxAsio/libs/asio/include/asio/generic/detail,
+					../../../addons/ofxAsio/libs/asio/include/asio/generic/detail/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/ip,
+					../../../addons/ofxAsio/libs/asio/include/asio/ip/detail,
+					../../../addons/ofxAsio/libs/asio/include/asio/ip/detail/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/ip/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/local,
+					../../../addons/ofxAsio/libs/asio/include/asio/local/detail,
+					../../../addons/ofxAsio/libs/asio/include/asio/local/detail/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/posix,
+					../../../addons/ofxAsio/libs/asio/include/asio/ssl,
+					../../../addons/ofxAsio/libs/asio/include/asio/ssl/detail,
+					../../../addons/ofxAsio/libs/asio/include/asio/ssl/detail/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/ssl/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/ts,
+					../../../addons/ofxAsio/libs/asio/include/asio/windows,
+					../../../addons/ofxAsio/src,
+					../../../addons/ofxAsio/src/ofxAsio,
+					../../../addons/ofxAsio/src/ofxAsio/UDP,
+					../../../addons/ofxTurboJpeg/src/,
+					"../../../addons/ofxTurboJpeg/libs/turbo-jpeg/include",
+					../libs,
+					../libs/websocketpp,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(OF_CORE_LIBS)",
+					"../../../addons/ofxTurboJpeg/libs/turbo-jpeg/lib/osx/libturbojpeg.dylib",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E4B69B600A3A1757003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+					../../../addons/ofxAsio/libs,
+					../../../addons/ofxAsio/libs/asio,
+					../../../addons/ofxAsio/libs/asio/include,
+					../../../addons/ofxAsio/libs/asio/include/asio,
+					../../../addons/ofxAsio/libs/asio/include/asio/detail,
+					../../../addons/ofxAsio/libs/asio/include/asio/detail/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/generic,
+					../../../addons/ofxAsio/libs/asio/include/asio/generic/detail,
+					../../../addons/ofxAsio/libs/asio/include/asio/generic/detail/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/ip,
+					../../../addons/ofxAsio/libs/asio/include/asio/ip/detail,
+					../../../addons/ofxAsio/libs/asio/include/asio/ip/detail/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/ip/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/local,
+					../../../addons/ofxAsio/libs/asio/include/asio/local/detail,
+					../../../addons/ofxAsio/libs/asio/include/asio/local/detail/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/posix,
+					../../../addons/ofxAsio/libs/asio/include/asio/ssl,
+					../../../addons/ofxAsio/libs/asio/include/asio/ssl/detail,
+					../../../addons/ofxAsio/libs/asio/include/asio/ssl/detail/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/ssl/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/ts,
+					../../../addons/ofxAsio/libs/asio/include/asio/windows,
+					../../../addons/ofxAsio/src,
+					../../../addons/ofxAsio/src/ofxAsio,
+					../../../addons/ofxAsio/src/ofxAsio/UDP,
+					../../../addons/ofxTurboJpeg/src/,
+					"../../../addons/ofxTurboJpeg/libs/turbo-jpeg/include",
+					../libs,
+					../libs/websocketpp,
+				);
+				ICON = "$(ICON_NAME_DEBUG)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/brettrenfer/Dropbox/Code/OF/of_v0.X.X_github/addons/ofxTurboJpeg/libs/turbo-jpeg/lib/osx",
+				);
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(OF_CORE_LIBS)",
+					"../../../addons/ofxTurboJpeg/libs/turbo-jpeg/lib/osx/libturbojpeg.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E4B69B610A3A1757003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+					../../../addons/ofxAsio/libs,
+					../../../addons/ofxAsio/libs/asio,
+					../../../addons/ofxAsio/libs/asio/include,
+					../../../addons/ofxAsio/libs/asio/include/asio,
+					../../../addons/ofxAsio/libs/asio/include/asio/detail,
+					../../../addons/ofxAsio/libs/asio/include/asio/detail/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/generic,
+					../../../addons/ofxAsio/libs/asio/include/asio/generic/detail,
+					../../../addons/ofxAsio/libs/asio/include/asio/generic/detail/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/ip,
+					../../../addons/ofxAsio/libs/asio/include/asio/ip/detail,
+					../../../addons/ofxAsio/libs/asio/include/asio/ip/detail/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/ip/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/local,
+					../../../addons/ofxAsio/libs/asio/include/asio/local/detail,
+					../../../addons/ofxAsio/libs/asio/include/asio/local/detail/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/posix,
+					../../../addons/ofxAsio/libs/asio/include/asio/ssl,
+					../../../addons/ofxAsio/libs/asio/include/asio/ssl/detail,
+					../../../addons/ofxAsio/libs/asio/include/asio/ssl/detail/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/ssl/impl,
+					../../../addons/ofxAsio/libs/asio/include/asio/ts,
+					../../../addons/ofxAsio/libs/asio/include/asio/windows,
+					../../../addons/ofxAsio/src,
+					../../../addons/ofxAsio/src/ofxAsio,
+					../../../addons/ofxAsio/src/ofxAsio/UDP,
+					../../../addons/ofxTurboJpeg/src/,
+					"../../../addons/ofxTurboJpeg/libs/turbo-jpeg/include",
+					../libs,
+					../libs/websocketpp,
+				);
+				ICON = "$(ICON_NAME_RELEASE)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/brettrenfer/Dropbox/Code/OF/of_v0.X.X_github/addons/ofxTurboJpeg/libs/turbo-jpeg/lib/osx",
+				);
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(OF_CORE_LIBS)",
+					"../../../addons/ofxTurboJpeg/libs/turbo-jpeg/lib/osx/libturbojpeg.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "jpeg_stream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B4E0A3A1720003C02F2 /* Debug */,
+				E4B69B4F0A3A1720003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "jpeg_stream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B600A3A1757003C02F2 /* Debug */,
+				E4B69B610A3A1757003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B69B4C0A3A1720003C02F2 /* Project object */;
+}
